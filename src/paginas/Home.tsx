@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import "./Home.css"
 
 function Home() {
@@ -6,10 +6,21 @@ function Home() {
     <>
       <header>
         <section className="rotas-de-nav">
-          <div>
+          
+          {/* <div>
             <Link to="/">Pagina 1</Link>
+          </div> */}
+
+          <div>
+            <h2>18 às 23h</h2>
           </div>
+
+          <div>
+            <h2>Seg à sext</h2>
+          </div>
+
         </section>
+
       </header>
 
       <main>
