@@ -1,5 +1,13 @@
 // import { Link } from "react-router-dom"
-import { Container, Header, Img, RotasDeNav, Section } from "./home"
+import {
+  CallToAction,
+  Container,
+  Header,
+  Img,
+  RotasDeNav,
+  Section,
+  WhatIs,
+} from "./styles"
 
 export function Home() {
   return (
@@ -25,14 +33,16 @@ export function Home() {
       <main>
         <Section>
           <div>
-            <p>Buffet infantil</p>
-            <h1>Espaço Galático</h1>
-            <h1>Experimente</h1>
+            <WhatIs>
+              <p>Buffet infantil</p>
+              <h1>Espaço Galático</h1>
+              <h1>Experimente</h1>
+            </WhatIs>
 
-            <p>
+            <CallToAction>
               Venha viver uma experiência gastronômica sem igual. Click no botão
               abaixo e reserve a sua mesa.
-            </p>
+            </CallToAction>
 
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"

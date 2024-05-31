@@ -1,9 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.body`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin-top: 2rem;
 
   background: linear-gradient(
       179.98deg,
@@ -18,11 +16,18 @@ export const Container = styled.body`
 `
 
 export const Header = styled.header`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `
 
 export const Section = styled.section`
   margin-bottom: 1rem;
+`
+
+export const WhatIs = styled.div`
+  max-width: 262px;
+`
+export const CallToAction = styled.div`
+  max-width: 312px;
 `
 
 export const RotasDeNav = styled.div`
