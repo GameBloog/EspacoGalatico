@@ -1,30 +1,29 @@
 // import { Link } from "react-router-dom"
-import "./Home.css"
+import { Container, Header, Img, RotasDeNav, Section } from "./home"
 
-function Home() {
+export function Home() {
   return (
-    <>
-      <header>
-        <section className="rotas-de-nav">
-          
+    <Container>
+      <Header>
+        <Section>
           {/* <div>
             <Link to="/">Pagina 1</Link>
           </div> */}
 
-          <div>
-            <h2>18 às 23h</h2>
-          </div>
+          <RotasDeNav>
+            <div>
+              <h2>18 às 23h</h2>
+            </div>
 
-          <div>
-            <h2>Seg à sext</h2>
-          </div>
-
-        </section>
-
-      </header>
+            <div>
+              <h2>Seg à sext</h2>
+            </div>
+          </RotasDeNav>
+        </Section>
+      </Header>
 
       <main>
-        <section className="pagina-inicial-mobile">
+        <Section>
           <div>
             <p>Buffet infantil</p>
             <h1>Espaço Galático</h1>
@@ -42,10 +41,10 @@ function Home() {
 
             <button>Acesse nosso cardápio agora !</button>
           </div>
-        </section>
+        </Section>
 
-        <section className="caixa-de-informações-mobile">
-          <div>
+        <Section>
+          <Img>
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
@@ -55,11 +54,11 @@ function Home() {
               Nosso cardápio é variado e conta com toda a variedade da cozinha
               Italiana, para que você tenha uma experiência completa.
             </p>
-          </div>
-        </section>
+          </Img>
+        </Section>
 
-        <section className="pagina-cozinha-italiana">
-          <div>
+        <Section>
+          <Img>
             <h1>Com fidelidade a cozinha Italiana</h1>
 
             <img
@@ -73,13 +72,13 @@ function Home() {
             </p>
 
             <button>Acesse nosso cardápio agora !</button>
-          </div>
-        </section>
+          </Img>
+        </Section>
 
-        <section className="tipos-de-pratos">
+        <Section>
           <h1>Tipos de pratos que vamos trazer da Itália</h1>
 
-          <div>
+          <Img>
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
@@ -94,17 +93,17 @@ function Home() {
             </p>
 
             <button>Acesse nosso cardápio agora !</button>
-          </div>
-        </section>
+          </Img>
+        </Section>
 
-        <section className="feedback-clientes">
+        <Section>
           <p>
             Realmente uma experiencia gastronômica sem igual. Eu amo a
             gastronomia Italiana e já visitei o país. Foi uma das melhores
             refeições que ja comi. Me sentí de volta à Itália.
           </p>
 
-          <div>
+          <Img>
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
@@ -112,18 +111,19 @@ function Home() {
 
             <h3>Angela Vargas</h3>
             <p>Empreendedora</p>
-          </div>
-        </section>
+          </Img>
+        </Section>
 
-        <section className="faca-seu-pedido">
+        <Section>
           <h1>Faça seu pedido e receba no conforto da sua casa !</h1>
+          <Img>
+            <img
+              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+              alt=""
+            />
+          </Img>
 
-          <img
-            src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-            alt=""
-          />
-
-          <div>
+          <Img>
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
@@ -134,10 +134,10 @@ function Home() {
             </p>
 
             <button>Acesse nosso cardápio agora !</button>
-          </div>
-        </section>
+          </Img>
+        </Section>
 
-        <section className="login">
+        <Section>
           <div>
             <p>Buffet infantil</p>
             <h1>Espaço Galático</h1>
@@ -156,11 +156,11 @@ function Home() {
 
           <h2>Siga-nos nas mídias</h2>
 
-          <div>
+          <Img>
             <img src="" alt="" />
             <img src="" alt="" />
             <img src="" alt="" />
-          </div>
+          </Img>
 
           <div>
             <textarea name="" id=""></textarea>
@@ -168,11 +168,10 @@ function Home() {
           </div>
 
           <button>Inscreve-se e receba nossas novidades</button>
-        </section>
+        </Section>
       </main>
 
       <footer>Restaurante Cheff Petter 2023</footer>
-    </>
+    </Container>
   )
 }
-export default Home
