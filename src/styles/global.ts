@@ -21,4 +21,12 @@ export const GlobalStyle = createGlobalStyle`
   body, input, textarea, button{
     font: 400 1rem Roboto, sans-serif;
   }
+
+  p {
+        font-family: "Poppins", sans-serif;
+  }
+
+  h1 {
+    font-family: "Galada", cursive;
+  }
 `

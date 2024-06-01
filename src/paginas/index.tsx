@@ -1,13 +1,13 @@
-// import { Link } from "react-router-dom"
 import {
+  Header,
+  Section,
+  RotasDeNav,
+  MobileHomePage,
+  WhatIs,
   CallToAction,
   Container,
-  Header,
   Img,
-  RotasDeNav,
-  Section,
-  WhatIs,
-} from "./styles"
+} from "./styles.ts"
 
 export function Home() {
   return (
@@ -32,25 +32,25 @@ export function Home() {
 
       <main>
         <Section>
-          <div>
+          <MobileHomePage>
             <WhatIs>
               <p>Buffet infantil</p>
               <h1>Espaço Galático</h1>
-              <h1>Experimente</h1>
+              <h1>Onde a Magia Acontece!</h1>
             </WhatIs>
 
             <CallToAction>
-              Venha viver uma experiência gastronômica sem igual. Click no botão
-              abaixo e reserve a sua mesa.
+              No Espaço Galático, transformamos sonhos em festas infantis
+              inesquecíveis! Click no botão abaixo e saiba mais.
             </CallToAction>
 
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
+              alt="Um garoto sorrindo em um playground"
             />
 
-            <button>Acesse nosso cardápio agora !</button>
-          </div>
+            <button>Veja nossas promoções!</button>
+          </MobileHomePage>
         </Section>
 
         <Section>
