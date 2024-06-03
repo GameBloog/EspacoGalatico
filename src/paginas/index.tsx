@@ -7,6 +7,10 @@ import {
   CallToAction,
   Container,
   Img,
+  RoudendImg,
+  ImageWithText,
+  ImgItalia,
+  SectionImg,
 } from "./styles.ts"
 
 export function Home() {
@@ -43,47 +47,85 @@ export function Home() {
               No Espaço Galático, transformamos sonhos em festas infantis
               inesquecíveis! Click no botão abaixo e saiba mais.
             </CallToAction>
-
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt="Um garoto sorrindo em um playground"
-            />
+            <RoudendImg>
+              <img
+                src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+                alt="Um garoto sorrindo em um playground"
+              />
+            </RoudendImg>
 
             <button>Veja nossas promoções!</button>
           </MobileHomePage>
         </Section>
 
-        <Section>
+        <ImageWithText>
           <Img>
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
             />
-
-            <p>
-              Nosso cardápio é variado e conta com toda a variedade da cozinha
-              Italiana, para que você tenha uma experiência completa.
-            </p>
           </Img>
-        </Section>
+          <p>
+            Nosso cardápio é variado e conta com toda a variedade da cozinha
+            Italiana, para que você tenha uma experiência completa.
+          </p>
+        </ImageWithText>
 
-        <Section>
+        <ImageWithText>
           <Img>
-            <h1>Com fidelidade a cozinha Italiana</h1>
-
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
             />
-
-            <p>
-              Cheff Peter trás direto da Itália, os melhores pratos com toda a
-              fidelidade ás tradições do país.
-            </p>
-
-            <button>Acesse nosso cardápio agora !</button>
           </Img>
-        </Section>
+          <p>
+            Nosso cardápio é variado e conta com toda a variedade da cozinha
+            Italiana, para que você tenha uma experiência completa.
+          </p>
+        </ImageWithText>
+
+        <ImageWithText>
+          <Img>
+            <img
+              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+              alt=""
+            />
+          </Img>
+          <p>
+            Nosso cardápio é variado e conta com toda a variedade da cozinha
+            Italiana, para que você tenha uma experiência completa.
+          </p>
+        </ImageWithText>
+
+        <ImageWithText>
+          <Img>
+            <img
+              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+              alt=""
+            />
+          </Img>
+          <p>
+            Nosso cardápio é variado e conta com toda a variedade da cozinha
+            Italiana, para que você tenha uma experiência completa.
+          </p>
+        </ImageWithText>
+
+        <SectionImg>
+          <h1>Com fidelidade a cozinha Italiana</h1>
+          <ImgItalia>
+            <img
+              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+              alt=""
+            />
+          </ImgItalia>
+
+          <p>
+            Cheff Peter trás direto da Itália, os melhores pratos com toda a
+            fidelidade ás tradições do país.
+          </p>
+
+          <button>Acesse nosso cardápio agora !</button>
+        </SectionImg>
 
         <Section>
           <h1>Tipos de pratos que vamos trazer da Itália</h1>

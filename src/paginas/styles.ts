@@ -34,21 +34,13 @@ export const MobileHomePage = styled.div`
   align-items: center;
   gap: 5px;
 
-  img {
-    /* max-width: 279px; */
-
-    width: 279px;
-    height: 279px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-  }
-
   button {
-    /* max-width: 322px; */
-
-    width: 322px;
-    height: 57;
-    border-radius: 1rem;
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -59,14 +51,23 @@ export const WhatIs = styled.div`
     font-family: "Galada", cursive;
   }
 
-  h2 {
+  p {
     font-family: "Poppins", sans-serif;
   }
 `
 export const CallToAction = styled.div`
   max-width: 312px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 1.2rem;
+`
+
+export const RoudendImg = styled.div`
+  img {
+    width: 279px;
+    height: 279px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
 `
 
 //MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
@@ -74,13 +75,18 @@ export const CallToAction = styled.div`
 export const RotasDeNav = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   div {
     width: 138px;
     height: 41px;
     border: 1px solid red;
     border-radius: 7px;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h2 {
@@ -92,7 +98,66 @@ export const RotasDeNav = styled.div`
 `
 export const Img = styled.div`
   img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+  }
+`
+
+export const ImageWithText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  max-width: 295;
+  margin-bottom: 3rem;
+
+  p {
+    text-align: center;
+    width: 200px;
+  }
+`
+export const SectionImg = styled.div`
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+
+  h1 {
+    font-family: "Galada", cursive;
+    text-align: center;
+    max-width: 19rem;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    width: 14rem;
+    text-align: center;
+  }
+
+  button {
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+  }
+`
+
+export const ImgItalia = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+
+  img {
+    max-width: 226px;
+    max-height: 291px;
   }
 `
