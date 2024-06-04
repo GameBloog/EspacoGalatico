@@ -214,3 +214,8 @@ export const Reserve = styled.div`
     margin-bottom: 1rem;
   }
 `
+
+
+export const MobileLastPage = styled.div`
+  border: 1px solid red;
+`

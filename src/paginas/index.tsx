@@ -14,16 +14,18 @@ import {
   SectionImg,
   ImageWithTextContainer,
   Reserve,
+  MobileLastPage,
 } from "./styles.ts"
 
 // import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
+
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
 import mesaRefeitorio from "../assets/imagens/Mesas-refeitorio.jpg"
 import espacoPrivativo from "../assets/imagens/Espaços-privativos.jpg"
 import pacotesEspeciais from "../assets/imagens/pacotes-especiais.jpg"
 import espacoFestas from "../assets/imagens/espaço-de-festas.jpg"
 import instagram from "../assets/imagens/instagram.png"
-import tiktok from "../assets/imagens/tiktok.png"
+import facebook from "../assets/imagens/Facebook.png"
 import whatzapp from "../assets/imagens/Whatapp.jpg"
 import logo from "../assets/imagens/logo.jpg"
 
@@ -195,7 +197,7 @@ export function Home() {
         </Reserve>
 
         <Section>
-          <div>
+          <MobileLastPage>
             <div>
               <p>Buffet infantil</p>
               <h1>Espaço Galático</h1>
@@ -216,17 +218,15 @@ export function Home() {
 
             <ImgLogos>
               <img src={instagram} alt="instagram" />
-              <img src={tiktok} alt="tiktok" />
+              <img src={facebook} alt="facebook" />
               <img src={whatzapp} alt="Whatapp" />
             </ImgLogos>
 
-            <div>
-              <textarea name="" id=""></textarea>
-              <textarea name="" id=""></textarea>
-            </div>
+            <button>
+              Inscreve-se e receba nossas novidades
+            </button>
 
-            <button>Inscreve-se e receba nossas novidades</button>
-          </div>
+          </MobileLastPage>
         </Section>
       </main>
 
