@@ -1,7 +1,7 @@
 import {
   Header,
   Section,
-  RotasDeNav,
+  HorariosDeServico,
   MobileHomePage,
   WhatIs,
   CallToAction,
@@ -11,10 +11,13 @@ import {
   RoudendImg,
   ImageWithText,
   ImgItalia,
+  PratosItalia,
   SectionImg,
+  EspacoFestas,
   ImageWithTextContainer,
   Reserve,
   MobileLastPage,
+  BoxShadow,
 } from "./styles.ts"
 
 // import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
@@ -34,15 +37,15 @@ export function Home() {
     <Container>
       <Header>
         <Section>
-          <RotasDeNav>
+          <HorariosDeServico>
             <div>
               <h2>18 às 23h</h2>
             </div>
 
-            <div>
+            <BoxShadow>
               <h2>Seg à sext</h2>
-            </div>
-          </RotasDeNav>
+            </BoxShadow>
+          </HorariosDeServico>
         </Section>
       </Header>
 
@@ -117,6 +120,7 @@ export function Home() {
             </p>
           </ImageWithText>
         </ImageWithTextContainer>
+
         <ImageWithTextContainer>
           <ImageWithText>
             <Img>
@@ -134,7 +138,7 @@ export function Home() {
         </ImageWithTextContainer>
 
         <SectionImg>
-          <div>
+          <EspacoFestas>
             <h3>Agende sua visita e conheça o nosso espaço!</h3>
 
             <ImgItalia>
@@ -149,17 +153,19 @@ export function Home() {
             </p>
 
             <button>Veja nossas redes!</button>
-          </div>
+          </EspacoFestas>
         </SectionImg>
 
         <SectionImg>
-          <h3>Tipos de pratos que vamos trazer da Itália</h3>
+          <PratosItalia>
+            <h3>Tipos de pratos que vamos trazer da Itália</h3>
 
-          <ImgItalia>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
+            <ImgItalia>
+              <img
+                src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+                alt=""
+              />
+            </ImgItalia>
 
             <p>
               A gastronomia italiana é famosa em todo o mundo por sua variedade
@@ -170,7 +176,7 @@ export function Home() {
             </p>
 
             <button>Acesse nosso cardápio agora !</button>
-          </ImgItalia>
+          </PratosItalia>
         </SectionImg>
 
         <Reserve>
@@ -188,7 +194,7 @@ export function Home() {
               alt=""
             />
           </Img>
-          
+
           <p>
             Baixe nosso app na loja Play Store. instale e faça o seu cadastro.
           </p>
@@ -198,19 +204,21 @@ export function Home() {
 
         <Section>
           <MobileLastPage>
-            <div>
+            <WhatIs>
               <p>Buffet infantil</p>
               <h1>Espaço Galático</h1>
-              <h1>Experimente</h1>
-            </div>
+              <h1>Onde a Magia Acontece!</h1>
+            </WhatIs>
 
-            <div>
-              <h2>18 às 23h</h2>
-            </div>
+            <HorariosDeServico>
+              <div>
+                <h2>18 às 23h</h2>
+              </div>
 
-            <div>
-              <h2>Seg à sext</h2>
-            </div>
+              <BoxShadow>
+                <h2>Seg à sext</h2>
+              </BoxShadow>
+            </HorariosDeServico>
 
             <p>Venha viver essa experiência !</p>
 
@@ -222,10 +230,7 @@ export function Home() {
               <img src={whatzapp} alt="Whatapp" />
             </ImgLogos>
 
-            <button>
-              Inscreve-se e receba nossas novidades
-            </button>
-
+            <button>Inscreve-se e receba nossas novidades</button>
           </MobileLastPage>
         </Section>
       </main>
