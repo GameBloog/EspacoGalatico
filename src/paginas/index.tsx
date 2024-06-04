@@ -12,9 +12,10 @@ import {
   ImageWithText,
   ImgItalia,
   SectionImg,
+  ImageWithTextContainer,
 } from "./styles.ts"
 
-import garoto from "../assets/imagens/garoto-playground.jpg"
+// import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
 import mesaRefeitorio from "../assets/imagens/Mesas-refeitorio.jpg"
 import espacoPrivativo from "../assets/imagens/Espaços-privativos.jpg"
@@ -23,17 +24,13 @@ import espacoFestas from "../assets/imagens/espaço-de-festas.jpg"
 import instagram from "../assets/imagens/instagram.png"
 import tiktok from "../assets/imagens/tiktok.png"
 import whatzapp from "../assets/imagens/Whatapp.jpg"
-
+import logo from "../assets/imagens/logo.jpg"
 
 export function Home() {
   return (
     <Container>
       <Header>
         <Section>
-          {/* <div>
-            <Link to="/">Pagina 1</Link>
-          </div> */}
-
           <RotasDeNav>
             <div>
               <h2>18 às 23h</h2>
@@ -62,7 +59,7 @@ export function Home() {
 
             <RoudendImg>
               <div>
-                <img src={garoto} alt="Imagem de um garoto sorrindo" />
+                <img src={logo} alt="Imagem de um garoto sorrindo" />
               </div>
             </RoudendImg>
 
@@ -70,20 +67,22 @@ export function Home() {
           </MobileHomePage>
         </Section>
 
-        <ImageWithText>
-          <Img>
-            <img src={mesaDeJogos} alt="Mesas de jogos" />
-          </Img>
+        <ImageWithTextContainer>
+          <ImageWithText>
+            <Img>
+              <img src={mesaDeJogos} alt="Mesas de jogos" />
+            </Img>
 
-          <h3>Brinquedos e Atividades</h3>
+            <h3>Brinquedos e Atividades</h3>
 
-          <p>
-            Contamos com uma vasta seleção de brinquedos, incluindo playground,
-            piscina de bolinhas, cama elástica, e muito mais. Além disso, nossos
-            recreadores promovem atividades interativas e oficinas criativas
-            para manter a criançada sempre entretida.
-          </p>
-        </ImageWithText>
+            <p>
+              Contamos com uma vasta seleção de brinquedos, incluindo
+              playground, piscina de bolinhas, cama elástica, e muito mais. Além
+              disso, nossos recreadores promovem atividades interativas e
+              oficinas criativas para manter a criançada sempre entretida.
+            </p>
+          </ImageWithText>
+        </ImageWithTextContainer>
 
         <ImageWithText>
           <Img>

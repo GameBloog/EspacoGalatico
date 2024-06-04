@@ -26,7 +26,6 @@ export const Section = styled.section`
 //MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const MobileHomePage = styled.div`
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,8 +62,8 @@ export const CallToAction = styled.div`
 
 export const RoudendImg = styled.div`
   img {
-    width: 279px;
-    height: 279px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-bottom: 1rem;
   }
@@ -104,22 +103,30 @@ export const Img = styled.div`
   }
 `
 
+export const ImageWithTextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const ImageWithText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 1.2rem;
-  max-width: 295;
   margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 5px;
+
+  background-color: ${(props) => props.theme["green-500"]};
 
   p {
-    text-align: center;
     width: 200px;
   }
 `
 export const SectionImg = styled.section`
-
   div {
     display: flex;
     flex-direction: column;
