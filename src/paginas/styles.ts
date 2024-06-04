@@ -107,7 +107,6 @@ export const ImageWithTextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
 `
 
 export const ImageWithText = styled.div`
@@ -119,7 +118,7 @@ export const ImageWithText = styled.div`
   gap: 1.2rem;
   margin-bottom: 3rem;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 2rem;
 
   background-color: ${(props) => props.theme["green-500"]};
 
@@ -128,6 +127,8 @@ export const ImageWithText = styled.div`
   }
 `
 export const SectionImg = styled.section`
+  margin-bottom: 2rem;
+
   div {
     display: flex;
     flex-direction: column;
@@ -135,9 +136,13 @@ export const SectionImg = styled.section`
     align-items: center;
     border: 1px solid red;
     gap: 1rem;
+    padding: 2rem;
+
+    background-color: ${(props) => props.theme["green-500"]};
   }
 
   h3 {
+    font-size: xx-large;
     font-family: "Galada", cursive;
     text-align: center;
     width: 19rem;
@@ -152,7 +157,7 @@ export const SectionImg = styled.section`
   }
 
   button {
-    width: 300px;
+    width: 250px;
     height: 2.5rem;
     border-radius: 8px;
     align-items: center;
@@ -178,5 +183,34 @@ export const ImgLogos = styled.div`
     width: 70px;
     height: 70px;
     border-radius: 50%;
+  }
+`
+export const Reserve = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+
+  h3 {
+    font-size: xx-large;
+    font-family: "Galada", cursive;
+    text-align: center;
+    width: 19rem;
+    margin: 8px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+  }
+
+  button {
+    width: 270px;
+    height: 2.5rem;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
   }
 `

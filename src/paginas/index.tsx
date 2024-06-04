@@ -13,6 +13,7 @@ import {
   ImgItalia,
   SectionImg,
   ImageWithTextContainer,
+  Reserve,
 } from "./styles.ts"
 
 // import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
@@ -149,10 +150,10 @@ export function Home() {
           </div>
         </SectionImg>
 
-        <Section>
-          <h1>Tipos de pratos que vamos trazer da Itália</h1>
+        <SectionImg>
+          <h3>Tipos de pratos que vamos trazer da Itália</h3>
 
-          <Img>
+          <ImgItalia>
             <img
               src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
               alt=""
@@ -167,49 +168,31 @@ export function Home() {
             </p>
 
             <button>Acesse nosso cardápio agora !</button>
-          </Img>
-        </Section>
+          </ImgItalia>
+        </SectionImg>
 
-        <Section>
+        <Reserve>
+          <h3>Faça seu pedido e receba no conforto da sua casa !</h3>
+          <Img>
+            <img
+              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+              alt=""
+            />
+          </Img>
+
+          <Img>
+            <img
+              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
+              alt=""
+            />
+          </Img>
+          
           <p>
-            Realmente uma experiencia gastronômica sem igual. Eu amo a
-            gastronomia Italiana e já visitei o país. Foi uma das melhores
-            refeições que ja comi. Me sentí de volta à Itália.
+            Baixe nosso app na loja Play Store. instale e faça o seu cadastro.
           </p>
 
-          <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
-
-            <h3>Angela Vargas</h3>
-            <p>Empreendedora</p>
-          </Img>
-        </Section>
-
-        <Section>
-          <h1>Faça seu pedido e receba no conforto da sua casa !</h1>
-          <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
-          </Img>
-
-          <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
-
-            <p>
-              Baixe nosso app na loja Play Store. instale e faça o seu cadastro.
-            </p>
-
-            <button>Acesse nosso cardápio agora!</button>
-          </Img>
-        </Section>
+          <button>Acesse nosso cardápio agora!</button>
+        </Reserve>
 
         <Section>
           <div>
