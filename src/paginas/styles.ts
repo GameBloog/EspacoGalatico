@@ -26,7 +26,6 @@ export const Section = styled.section`
 //MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const MobileHomePage = styled.div`
-  border: 1px solid red;
 
   display: flex;
   flex-direction: column;
@@ -49,6 +48,7 @@ export const WhatIs = styled.div`
 
   h1 {
     font-family: "Galada", cursive;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   }
 
   p {
@@ -81,15 +81,16 @@ export const RotasDeNav = styled.div`
   div {
     width: 138px;
     height: 41px;
-    border: 1px solid red;
     border-radius: 7px;
     margin-top: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
   }
 
   h2 {
+    color: black;
     font-family: "Poppins", sans-serif;
     line-height: 30px;
     font-weight: 700;
@@ -117,20 +118,22 @@ export const ImageWithText = styled.div`
     width: 200px;
   }
 `
-export const SectionImg = styled.div`
-  border: 1px solid red;
+export const SectionImg = styled.section`
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 1rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    gap: 1rem;
+  }
 
-  h1 {
+  h3 {
     font-family: "Galada", cursive;
     text-align: center;
-    max-width: 19rem;
+    width: 19rem;
+    margin: 8px;
   }
 
   p {
@@ -159,5 +162,13 @@ export const ImgItalia = styled.div`
   img {
     max-width: 226px;
     max-height: 291px;
+  }
+`
+
+export const ImgLogos = styled.div`
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
   }
 `

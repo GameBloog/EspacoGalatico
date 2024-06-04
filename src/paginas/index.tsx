@@ -7,11 +7,23 @@ import {
   CallToAction,
   Container,
   Img,
+  ImgLogos,
   RoudendImg,
   ImageWithText,
   ImgItalia,
   SectionImg,
 } from "./styles.ts"
+
+import garoto from "../assets/imagens/garoto-playground.jpg"
+import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
+import mesaRefeitorio from "../assets/imagens/Mesas-refeitorio.jpg"
+import espacoPrivativo from "../assets/imagens/Espaços-privativos.jpg"
+import pacotesEspeciais from "../assets/imagens/pacotes-especiais.jpg"
+import espacoFestas from "../assets/imagens/espaço-de-festas.jpg"
+import instagram from "../assets/imagens/instagram.png"
+import tiktok from "../assets/imagens/tiktok.png"
+import whatzapp from "../assets/imagens/Whatapp.jpg"
+
 
 export function Home() {
   return (
@@ -47,11 +59,11 @@ export function Home() {
               No Espaço Galático, transformamos sonhos em festas infantis
               inesquecíveis! Click no botão abaixo e saiba mais.
             </CallToAction>
+
             <RoudendImg>
-              <img
-                src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-                alt="Um garoto sorrindo em um playground"
-              />
+              <div>
+                <img src={garoto} alt="Imagem de um garoto sorrindo" />
+              </div>
             </RoudendImg>
 
             <button>Veja nossas promoções!</button>
@@ -60,71 +72,77 @@ export function Home() {
 
         <ImageWithText>
           <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
+            <img src={mesaDeJogos} alt="Mesas de jogos" />
           </Img>
+
+          <h3>Brinquedos e Atividades</h3>
+
           <p>
-            Nosso cardápio é variado e conta com toda a variedade da cozinha
-            Italiana, para que você tenha uma experiência completa.
+            Contamos com uma vasta seleção de brinquedos, incluindo playground,
+            piscina de bolinhas, cama elástica, e muito mais. Além disso, nossos
+            recreadores promovem atividades interativas e oficinas criativas
+            para manter a criançada sempre entretida.
           </p>
         </ImageWithText>
 
         <ImageWithText>
           <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
+            <img src={mesaRefeitorio} alt="Mesas de um refeitorio infantil" />
           </Img>
+
+          <h2>Cardápio Variado</h2>
           <p>
-            Nosso cardápio é variado e conta com toda a variedade da cozinha
-            Italiana, para que você tenha uma experiência completa.
+            Nossa cozinha prepara um cardápio diversificado e saudável, com
+            opções que vão desde salgadinhos deliciosos até doces irresistíveis.
+            Tudo pensado para agradar crianças e adultos.
           </p>
         </ImageWithText>
 
         <ImageWithText>
           <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
+            <img src={espacoPrivativo} alt="" />
           </Img>
+
+          <h2>Espaços Privativos</h2>
+
           <p>
-            Nosso cardápio é variado e conta com toda a variedade da cozinha
-            Italiana, para que você tenha uma experiência completa.
+            Oferecemos salas privativas para que você possa celebrar com
+            conforto e exclusividade. Perfeito para festas mais intimistas ou
+            eventos especiais.
           </p>
         </ImageWithText>
 
         <ImageWithText>
           <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
+            <img src={pacotesEspeciais} alt="" />
           </Img>
+
+          <h2>Pacotes Especiais</h2>
+
           <p>
-            Nosso cardápio é variado e conta com toda a variedade da cozinha
-            Italiana, para que você tenha uma experiência completa.
+            Confira nossos pacotes personalizados, que incluem tudo o que você
+            precisa para uma festa completa, desde a decoração até o buffet.
+            Temos opções para diferentes tamanhos de festas e orçamentos.
           </p>
         </ImageWithText>
 
         <SectionImg>
-          <h1>Com fidelidade a cozinha Italiana</h1>
-          <ImgItalia>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
-          </ImgItalia>
+          <div>
+            <h3>Agende sua visita e conheça o nosso espaço!</h3>
 
-          <p>
-            Cheff Peter trás direto da Itália, os melhores pratos com toda a
-            fidelidade ás tradições do país.
-          </p>
+            <ImgItalia>
+              <img src={espacoFestas} alt="" />
+            </ImgItalia>
 
-          <button>Acesse nosso cardápio agora !</button>
+            <p>
+              Oferecemos um espaço temático encantador, com diversas opções de
+              brinquedos e atividades, um cardápio delicioso e saudável, além de
+              uma equipe dedicada e experiente para tornar cada festa única e
+              especial.
+            </p>
+
+            <button>Veja nossas redes!</button>
+          </div>
         </SectionImg>
 
         <Section>
@@ -185,41 +203,43 @@ export function Home() {
               Baixe nosso app na loja Play Store. instale e faça o seu cadastro.
             </p>
 
-            <button>Acesse nosso cardápio agora !</button>
+            <button>Acesse nosso cardápio agora!</button>
           </Img>
         </Section>
 
         <Section>
           <div>
-            <p>Buffet infantil</p>
-            <h1>Espaço Galático</h1>
-            <h1>Experimente</h1>
+            <div>
+              <p>Buffet infantil</p>
+              <h1>Espaço Galático</h1>
+              <h1>Experimente</h1>
+            </div>
+
+            <div>
+              <h2>18 às 23h</h2>
+            </div>
+
+            <div>
+              <h2>Seg à sext</h2>
+            </div>
+
+            <p>Venha viver essa experiência !</p>
+
+            <h2>Siga-nos nas mídias</h2>
+
+            <ImgLogos>
+              <img src={instagram} alt="instagram" />
+              <img src={tiktok} alt="tiktok" />
+              <img src={whatzapp} alt="Whatapp" />
+            </ImgLogos>
+
+            <div>
+              <textarea name="" id=""></textarea>
+              <textarea name="" id=""></textarea>
+            </div>
+
+            <button>Inscreve-se e receba nossas novidades</button>
           </div>
-
-          <div>
-            <h2>18 às 23h</h2>
-          </div>
-
-          <div>
-            <h2>Seg à sext</h2>
-          </div>
-
-          <p>Venha viver essa experiência !</p>
-
-          <h2>Siga-nos nas mídias</h2>
-
-          <Img>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </Img>
-
-          <div>
-            <textarea name="" id=""></textarea>
-            <textarea name="" id=""></textarea>
-          </div>
-
-          <button>Inscreve-se e receba nossas novidades</button>
         </Section>
       </main>
 
