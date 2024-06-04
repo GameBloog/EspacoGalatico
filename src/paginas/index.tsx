@@ -84,46 +84,51 @@ export function Home() {
           </ImageWithText>
         </ImageWithTextContainer>
 
-        <ImageWithText>
-          <Img>
-            <img src={mesaRefeitorio} alt="Mesas de um refeitorio infantil" />
-          </Img>
+        <ImageWithTextContainer>
+          <ImageWithText>
+            <Img>
+              <img src={mesaRefeitorio} alt="Mesas de um refeitorio infantil" />
+            </Img>
 
-          <h2>Cardápio Variado</h2>
-          <p>
-            Nossa cozinha prepara um cardápio diversificado e saudável, com
-            opções que vão desde salgadinhos deliciosos até doces irresistíveis.
-            Tudo pensado para agradar crianças e adultos.
-          </p>
-        </ImageWithText>
+            <h2>Cardápio Variado</h2>
+            <p>
+              Nossa cozinha prepara um cardápio diversificado e saudável, com
+              opções que vão desde salgadinhos deliciosos até doces
+              irresistíveis. Tudo pensado para agradar crianças e adultos.
+            </p>
+          </ImageWithText>
+        </ImageWithTextContainer>
 
-        <ImageWithText>
-          <Img>
-            <img src={espacoPrivativo} alt="" />
-          </Img>
+        <ImageWithTextContainer>
+          <ImageWithText>
+            <Img>
+              <img src={espacoPrivativo} alt="" />
+            </Img>
 
-          <h2>Espaços Privativos</h2>
+            <h2>Espaços Privativos</h2>
 
-          <p>
-            Oferecemos salas privativas para que você possa celebrar com
-            conforto e exclusividade. Perfeito para festas mais intimistas ou
-            eventos especiais.
-          </p>
-        </ImageWithText>
+            <p>
+              Oferecemos salas privativas para que você possa celebrar com
+              conforto e exclusividade. Perfeito para festas mais intimistas ou
+              eventos especiais.
+            </p>
+          </ImageWithText>
+        </ImageWithTextContainer>
+        <ImageWithTextContainer>
+          <ImageWithText>
+            <Img>
+              <img src={pacotesEspeciais} alt="" />
+            </Img>
 
-        <ImageWithText>
-          <Img>
-            <img src={pacotesEspeciais} alt="" />
-          </Img>
+            <h2>Pacotes Especiais</h2>
 
-          <h2>Pacotes Especiais</h2>
-
-          <p>
-            Confira nossos pacotes personalizados, que incluem tudo o que você
-            precisa para uma festa completa, desde a decoração até o buffet.
-            Temos opções para diferentes tamanhos de festas e orçamentos.
-          </p>
-        </ImageWithText>
+            <p>
+              Confira nossos pacotes personalizados, que incluem tudo o que você
+              precisa para uma festa completa, desde a decoração até o buffet.
+              Temos opções para diferentes tamanhos de festas e orçamentos.
+            </p>
+          </ImageWithText>
+        </ImageWithTextContainer>
 
         <SectionImg>
           <div>
