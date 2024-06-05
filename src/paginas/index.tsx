@@ -18,6 +18,7 @@ import {
   Reserve,
   MobileLastPage,
   BoxShadow,
+  Footer,
 } from "./styles.ts"
 
 // import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
@@ -59,8 +60,10 @@ export function Home() {
             </WhatIs>
 
             <CallToAction>
-              No Espaço Galático, transformamos sonhos em festas infantis
-              inesquecíveis! Click no botão abaixo e saiba mais.
+              <p>
+                No Espaço Galático, transformamos sonhos em festas infantis
+                inesquecíveis! Click no botão abaixo e saiba mais.
+              </p>
             </CallToAction>
 
             <RoudendImg>
@@ -69,7 +72,7 @@ export function Home() {
               </div>
             </RoudendImg>
 
-            <button>Veja nossas promoções!</button>
+            <button>Entre em contato conosco!</button>
           </MobileHomePage>
         </Section>
 
@@ -235,7 +238,16 @@ export function Home() {
         </Section>
       </main>
 
-      <footer>Restaurante Cheff Petter 2023</footer>
+      <Footer>
+        <p>
+          Endereço: Av. Pref. Hirant Sanazar, 274 - Umuarama, Osasco - SP,
+          06030-095
+        </p>
+        <a href="https://maps.app.goo.gl/vxUyHoxKyLb4xnux9" target="_blank">
+          Nosso Endereço no Google Maps
+        </a>
+        <h6>Restaurante Cheff Petter 2023</h6>
+      </Footer>
     </Container>
   )
 }
