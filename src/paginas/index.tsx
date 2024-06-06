@@ -11,13 +11,14 @@ import {
   RoudendImg,
   ImageWithText,
   ImgItalia,
-  PratosItalia,
+  // PratosItalia,
   SectionImg,
   EspacoFestas,
   ImageWithTextContainer,
   Reserve,
   MobileLastPage,
   BoxShadow,
+  Footer,
 } from "./styles.ts"
 
 // import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
@@ -156,7 +157,7 @@ export function Home() {
           </EspacoFestas>
         </SectionImg>
 
-        <SectionImg>
+        {/* <SectionImg>
           <PratosItalia>
             <h3>Tipos de pratos que vamos trazer da Itália</h3>
 
@@ -177,29 +178,18 @@ export function Home() {
 
             <button>Acesse nosso cardápio agora !</button>
           </PratosItalia>
-        </SectionImg>
+        </SectionImg> */}
 
         <Reserve>
-          <h3>Faça seu pedido e receba no conforto da sua casa !</h3>
-          <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
-          </Img>
-
-          <Img>
-            <img
-              src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-              alt=""
-            />
-          </Img>
+          <h3>Oque os nossos clientes dizem ..</h3>
 
           <p>
-            Baixe nosso app na loja Play Store. instale e faça o seu cadastro.
+           "O Buffet Infantil Alegria transformou a
+            festa do meu filho em um dia mágico! A equipe foi incrível em
+            transformar nossas ideias em realidade. A decoração, atividades e
+            comida foram impecáveis. Obrigada por tornar o aniversário do meu
+            filho inesquecível!"
           </p>
-
-          <button>Acesse nosso cardápio agora!</button>
         </Reserve>
 
         <Section>
@@ -220,7 +210,9 @@ export function Home() {
               </BoxShadow>
             </HorariosDeServico>
 
-            <p>Venha viver essa experiência !</p>
+            <p>
+              <strong>Venha viver essa experiência!</strong>
+            </p>
 
             <h2>Siga-nos nas mídias</h2>
 
@@ -235,7 +227,7 @@ export function Home() {
         </Section>
       </main>
 
-      <footer>Restaurante Cheff Petter 2023</footer>
+      <Footer>Espaço Galatico 2024</Footer>
     </Container>
   )
 }

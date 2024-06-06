@@ -5,13 +5,13 @@ export const Container = styled.body`
 
   background: linear-gradient(
       179.98deg,
-      rgba(255, 122, 0, 0) 6.58%,
-      rgba(248, 123, 7, 0.65) 55.23%
+      rgba(0, 100, 0, 0) 6.58%,
+      rgba(0, 100, 0, 0.65) 55.23%
     ),
     linear-gradient(
       179.98deg,
-      rgba(255, 122, 0, 0) 6.58%,
-      rgba(248, 123, 7, 0.65) 55.23%
+      rgba(0, 100, 0, 0) 6.58%,
+      rgba(0, 0, 0, 0.65) 55.23%
     );
 `
 
@@ -20,9 +20,15 @@ export const Header = styled.header`
 `
 
 export const Section = styled.section`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 `
 
+export const Footer = styled.footer`
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 //MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const MobileHomePage = styled.div`
@@ -33,21 +39,27 @@ export const MobileHomePage = styled.div`
   gap: 5px;
 
   button {
-    width: 300px;
-    height: 2.5rem;
-    border-radius: 8px;
+    width: 250px;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
     align-items: center;
     padding: 0.2rem;
     margin-bottom: 1rem;
+    background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
+    color: white;
   }
 `
 
 export const WhatIs = styled.div`
-  max-width: 262px;
+  max-width: 300;
 
   h1 {
+    font-size: 30px;
+    line-height: 40px;
     font-family: "Galada", cursive;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    color: #f87b07;
   }
 
   p {
@@ -129,7 +141,7 @@ export const ImageWithText = styled.div`
   padding: 2rem;
   border-radius: 2rem;
 
-  background-color: ${(props) => props.theme["green-500"]};
+   background-color: ${(props) => props.theme["green-500"]}; 
   p {
     width: 200px;
   }
@@ -142,38 +154,42 @@ export const SectionImg = styled.div`
 //EspaçoFestas---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const EspacoFestas = styled.div`
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: ${(props) => props.theme["green-500"]};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  /* background-color: ${(props) => props.theme["green-500"]}; */
+  border-radius: 1rem;
 
   h3 {
-    font-size: xx-large;
+    font-size: 30px;
     font-family: "Galada", cursive;
     text-align: center;
     width: 19rem;
     margin: 8px;
+    color: #f87b07;;
   }
 
   p {
     display: flex;
     justify-content: center;
-    width: 14rem;
+    width: 18rem;
     text-align: center;
+    line-height: 25px;
   }
 
   button {
     width: 250px;
-    height: 2.5rem;
-    border-radius: 8px;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
     align-items: center;
     padding: 0.2rem;
     margin-bottom: 1rem;
+    background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
+    color: white;
   }
 `
 
@@ -191,30 +207,33 @@ export const ImgItalia = styled.div`
   }
 `
 
-export const PratosItalia = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1.2rem;
-  margin-bottom: 3rem;
-  padding: 2rem;
+// export const PratosItalia = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   gap: 1.2rem;
+//   margin-bottom: 3rem;
+//   padding: 2rem;
 
-  background-color: ${(props) => props.theme["green-500"]};
-  p {
-    width: 200px;
-  }
+//   background-color: ${(props) => props.theme["green-500"]};
+//   p {
+//     width: 200px;
 
-  button {
-    width: 250px;
-    height: 2.5rem;
-    border-radius: 8px;
-    align-items: center;
-    padding: 0.2rem;
-    margin-bottom: 1rem;
-  }
-`
+//   }
+
+//   button {
+//     width: 250px;
+//     height: 3rem;
+//     border-radius: 10px;
+//     border: none;
+//     align-items: center;
+//     padding: 0.2rem;
+//     margin-bottom: 1rem;
+//     background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
+//   }
+// `
 
 export const Reserve = styled.div`
   display: flex;
@@ -223,6 +242,7 @@ export const Reserve = styled.div`
   flex-direction: column;
   text-align: center;
   gap: 1rem;
+  margin-bottom: 3rem;
 
   h3 {
     font-size: xx-large;
@@ -230,39 +250,34 @@ export const Reserve = styled.div`
     text-align: center;
     width: 19rem;
     margin: 8px;
+    color: #f87b07
   }
 
   p {
     font-family: "Poppins", sans-serif;
-  }
-
-  button {
-    width: 270px;
-    height: 2.5rem;
-    border-radius: 8px;
-    align-items: center;
-    padding: 0.2rem;
-    margin-bottom: 1rem;
+    line-height: 25px;
   }
 `
 
 //MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const MobileLastPage = styled.div`
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
   button {
     width: 250px;
-    height: 2.5rem;
-    border-radius: 8px;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
     align-items: center;
     padding: 0.2rem;
     margin-bottom: 1rem;
+    background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
+    color: white;
   }
 `
 
