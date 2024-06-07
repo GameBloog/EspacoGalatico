@@ -3,6 +3,7 @@ import {
   Section,
   HorariosDeServico,
   MobileHomePage,
+  Button,
   WhatIs,
   CallToAction,
   Container,
@@ -11,7 +12,6 @@ import {
   RoudendImg,
   ImageWithText,
   ImgItalia,
-  // PratosItalia,
   SectionImg,
   EspacoFestas,
   ImageWithTextContainer,
@@ -72,7 +72,7 @@ export function Home() {
               </div>
             </RoudendImg>
 
-            <button>Entre em contato conosco!</button>
+            <Button>Entre em contato conosco!</Button>
           </MobileHomePage>
         </Section>
 
@@ -155,7 +155,7 @@ export function Home() {
               especial.
             </p>
 
-            <button>Veja nossas redes!</button>
+            <Button>Veja nossas redes!</Button>
           </EspacoFestas>
         </SectionImg>
         
@@ -193,7 +193,7 @@ export function Home() {
               <strong>Venha viver essa experiência!</strong>
             </p>
 
-            <h2>Siga-nos nas mídias</h2>
+            <h3>Siga-nos nas mídias</h3>
 
             <ImgLogos>
               <img src={instagram} alt="instagram" />
@@ -201,7 +201,7 @@ export function Home() {
               <img src={whatzapp} alt="Whatapp" />
             </ImgLogos>
 
-            <button>Inscreve-se e receba nossas novidades</button>
+            <Button>Inscreve-se e receba nossas novidades</Button>
           </MobileLastPage>
         </Section>
       </main>

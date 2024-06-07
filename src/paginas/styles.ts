@@ -2,17 +2,6 @@ import styled from "styled-components"
 
 export const Container = styled.body`
   margin-top: 2rem;
-
-  background: linear-gradient(
-      179.98deg,
-      rgba(0, 135, 95, 0) 6.58%,
-      rgba(0, 135, 95, 0.65) 55.23%
-    ),
-    linear-gradient(
-      179.98deg,
-      rgba(0, 135, 95, 0) 6.58%,
-      rgba(0, 135, 95, 0.65) 55.23%
-    );
 `
 
 export const Header = styled.header`
@@ -31,20 +20,19 @@ export const MobileHomePage = styled.div`
   justify-content: center;
   align-items: center;
   gap: 5px;
-
-  button {
-    width: 250px;
-    height: 3rem;
-    border-radius: 10px;
-    border: none;
-    align-items: center;
-    padding: 0.2rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
-    color: white;
-  }
 `
 
+export const Button = styled.button`
+  width: 250px;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  align-items: center;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(270deg, #f87b07 0%, #ff8c00 100%);
+  color: white;
+`
 export const WhatIs = styled.div`
   max-width: 300;
 
@@ -122,8 +110,6 @@ export const Img = styled.div`
   }
 `
 
-//HorariosDeServiço---------------------------------------------------------------------------------------------------------------------------------------------
-
 export const ImageWithTextContainer = styled.div`
   display: flex;
   align-items: center;
@@ -200,7 +186,6 @@ export const EspacoFestas = styled.div`
   /* background-color: ${(props) => props.theme["green-500"]}; */
   border-radius: 1rem;
 
-
   h3 {
     font-size: 30px;
     font-family: "Galada", cursive;
@@ -208,6 +193,7 @@ export const EspacoFestas = styled.div`
     width: 19rem;
     margin: 8px;
     color: #f87b07;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   }
 
   p {
@@ -216,25 +202,6 @@ export const EspacoFestas = styled.div`
     width: 18rem;
     text-align: center;
     line-height: 25px;
-  }
-
-  button {
-    width: 250px;
-    height: 3rem;
-    border-radius: 10px;
-    border: none;
-    max-width: 250px;
-    height: 2.5rem;
-    border-radius: 8px;
-    align-items: center;
-    padding: 0.2rem 0.8rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
-    color: white;
-    font-weight: bold;
-
-    background-color: ${(props) => props.theme["green-500"]};
-    color: ${(props) => props.theme["white"]};
   }
 `
 
@@ -273,22 +240,11 @@ export const Reserve = styled.div`
   }
 
   p {
-    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    text-align: center;
     line-height: 25px;
-  }
-
-  button {
-    max-width: 270px;
-    height: 2.5rem;
-    border-radius: 8px;
-    align-items: center;
-    padding: 0.2rem 0.7rem;
-    margin-bottom: 1rem;
-
-    font-weight: bold;
-
-    background-color: ${(props) => props.theme["green-500"]};
-    color: ${(props) => props.theme["white"]};
   }
 `
 
@@ -299,20 +255,9 @@ export const MobileLastPage = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 
-  button {
-    width: 250px;
-    height: 3rem;
-    border-radius: 10px;
-    border: none;
-    max-width: 100%;
-    height: 2.5rem;
-    border-radius: 8px;
-    align-items: center;
-    padding: 0.2rem 0.7rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
+  h3 {
     color: white;
   }
 `
