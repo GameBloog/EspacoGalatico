@@ -5,13 +5,13 @@ export const Container = styled.body`
 
   background: linear-gradient(
       179.98deg,
-      rgba(0, 100, 0, 0) 6.58%,
-      rgba(0, 100, 0, 0.65) 55.23%
+      rgba(0, 135, 95, 0) 6.58%,
+      rgba(0, 135, 95, 0.65) 55.23%
     ),
     linear-gradient(
       179.98deg,
-      rgba(0, 100, 0, 0) 6.58%,
-      rgba(0, 0, 0, 0.65) 55.23%
+      rgba(0, 135, 95, 0) 6.58%,
+      rgba(0, 135, 95, 0.65) 55.23%
     );
 `
 
@@ -23,12 +23,6 @@ export const Section = styled.section`
   margin-bottom: 3rem;
 `
 
-export const Footer = styled.footer`
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
 //MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const MobileHomePage = styled.div`
@@ -111,14 +105,20 @@ export const HorariosDeServico = styled.div`
   }
 `
 
+//HorariosDeServiço---------------------------------------------------------------------------------------------------------------------------------------------
+
 export const BoxShadow = styled.div`
   box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.5);
 `
 
 export const Img = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   img {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
   }
 `
 
@@ -137,6 +137,42 @@ export const ImageWithText = styled.div`
   justify-content: center;
   text-align: center;
   gap: 1.2rem;
+  max-width: 250px;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  background-color: ${(props) => props.theme["orange-500"]};
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Opcional: para cantos arredondados */
+  }
+
+  h3 {
+    margin: 0;
+    color: white;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  p {
+    max-width: 200px;
+    margin: 0;
+  }
+
+  /* 
+    TALVEZ SEJA UTIL
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
   margin-bottom: 3rem;
   padding: 2rem;
   border-radius: 2rem;
@@ -144,11 +180,12 @@ export const ImageWithText = styled.div`
    background-color: ${(props) => props.theme["green-500"]}; 
   p {
     width: 200px;
-  }
+  }  
+  */
 `
 
-export const SectionImg = styled.div`
-    margin-bottom: 1rem;
+export const SectionImg = styled.section`
+  margin-bottom: 2rem;
 `
 
 //EspaçoFestas---------------------------------------------------------------------------------------------------------------------------------------------
@@ -163,13 +200,14 @@ export const EspacoFestas = styled.div`
   /* background-color: ${(props) => props.theme["green-500"]}; */
   border-radius: 1rem;
 
+
   h3 {
     font-size: 30px;
     font-family: "Galada", cursive;
     text-align: center;
     width: 19rem;
     margin: 8px;
-    color: #f87b07;;
+    color: #f87b07;
   }
 
   p {
@@ -185,11 +223,18 @@ export const EspacoFestas = styled.div`
     height: 3rem;
     border-radius: 10px;
     border: none;
+    max-width: 250px;
+    height: 2.5rem;
+    border-radius: 8px;
     align-items: center;
-    padding: 0.2rem;
+    padding: 0.2rem 0.8rem;
     margin-bottom: 1rem;
     background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
     color: white;
+    font-weight: bold;
+
+    background-color: ${(props) => props.theme["green-500"]};
+    color: ${(props) => props.theme["white"]};
   }
 `
 
@@ -207,34 +252,6 @@ export const ImgItalia = styled.div`
   }
 `
 
-// export const PratosItalia = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   gap: 1.2rem;
-//   margin-bottom: 3rem;
-//   padding: 2rem;
-
-//   background-color: ${(props) => props.theme["green-500"]};
-//   p {
-//     width: 200px;
-
-//   }
-
-//   button {
-//     width: 250px;
-//     height: 3rem;
-//     border-radius: 10px;
-//     border: none;
-//     align-items: center;
-//     padding: 0.2rem;
-//     margin-bottom: 1rem;
-//     background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
-//   }
-// `
-
 export const Reserve = styled.div`
   display: flex;
   align-items: center;
@@ -243,19 +260,35 @@ export const Reserve = styled.div`
   text-align: center;
   gap: 1rem;
   margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 
   h3 {
-    font-size: xx-large;
+    font-size: 30px;
     font-family: "Galada", cursive;
     text-align: center;
     width: 19rem;
     margin: 8px;
-    color: #f87b07
+    color: #f87b07;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   }
 
   p {
     font-family: "Poppins", sans-serif;
     line-height: 25px;
+  }
+
+  button {
+    max-width: 270px;
+    height: 2.5rem;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0.2rem 0.7rem;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+
+    background-color: ${(props) => props.theme["green-500"]};
+    color: ${(props) => props.theme["white"]};
   }
 `
 
@@ -273,8 +306,11 @@ export const MobileLastPage = styled.div`
     height: 3rem;
     border-radius: 10px;
     border: none;
+    max-width: 100%;
+    height: 2.5rem;
+    border-radius: 8px;
     align-items: center;
-    padding: 0.2rem;
+    padding: 0.2rem 0.7rem;
     margin-bottom: 1rem;
     background: linear-gradient(90deg, #00b37e 0%, #00875f 100%);
     color: white;
@@ -288,11 +324,49 @@ export const ImgLogos = styled.div`
   gap: 8px;
 
   img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
   }
 `
 
-//MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 1rem;
 
+  p {
+    text-align: center;
+  }
+
+  a {
+    max-width: 100%;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 4px #0056b3;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  h6 {
+    font-size: 16px;
+
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+`
+
+//MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------

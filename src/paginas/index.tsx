@@ -60,8 +60,10 @@ export function Home() {
             </WhatIs>
 
             <CallToAction>
-              No Espaço Galático, transformamos sonhos em festas infantis
-              inesquecíveis! Click no botão abaixo e saiba mais.
+              <p>
+                No Espaço Galático, transformamos sonhos em festas infantis
+                inesquecíveis! Click no botão abaixo e saiba mais.
+              </p>
             </CallToAction>
 
             <RoudendImg>
@@ -70,7 +72,7 @@ export function Home() {
               </div>
             </RoudendImg>
 
-            <button>Veja nossas promoções!</button>
+            <button>Entre em contato conosco!</button>
           </MobileHomePage>
         </Section>
 
@@ -156,30 +158,7 @@ export function Home() {
             <button>Veja nossas redes!</button>
           </EspacoFestas>
         </SectionImg>
-
-        {/* <SectionImg>
-          <PratosItalia>
-            <h3>Tipos de pratos que vamos trazer da Itália</h3>
-
-            <ImgItalia>
-              <img
-                src="https://static.vecteezy.com/ti/vetor-gratis/p1/7126739-icone-de-ponto-de-interrogacao-gratis-vetor.jpg"
-                alt=""
-              />
-            </ImgItalia>
-
-            <p>
-              A gastronomia italiana é famosa em todo o mundo por sua variedade
-              de pratos deliciosos e autênticos. Entre as maravilhas culinárias
-              que se destacam, a pizza certamente ocupa um lugar de destaque.
-              Com sua origem na pitoresca cidade de Nápoles, a pizza italiana se
-              tornou uma paixão global, sendo apreciada por milhões de pessoas.
-            </p>
-
-            <button>Acesse nosso cardápio agora !</button>
-          </PratosItalia>
-        </SectionImg> */}
-
+        
         <Reserve>
           <h3>Oque os nossos clientes dizem ..</h3>
 
@@ -227,7 +206,16 @@ export function Home() {
         </Section>
       </main>
 
-      <Footer>Espaço Galatico 2024</Footer>
+      <Footer>
+        <p>
+          Endereço: Av. Pref. Hirant Sanazar, 274 - Umuarama, Osasco - SP,
+          06030-095
+        </p>
+        <a href="https://maps.app.goo.gl/vxUyHoxKyLb4xnux9" target="_blank">
+          Nosso Endereço no Google Maps
+        </a>
+        <h6>Restaurante Cheff Petter 2023</h6>
+      </Footer>
     </Container>
   )
 }

@@ -13,8 +13,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: ${(props) => props.theme["gray-800"]};
-    color: ${(props) => props.theme["gray-100"]};
+    background-color: ${(props) => props.theme["white"]};
+    color: ${(props) => props.theme["gray-900"]};
     -webkit-font-smoothing: antialiased
   }
 
@@ -24,9 +24,11 @@ export const GlobalStyle = createGlobalStyle`
 
   p {
         font-family: "Poppins", sans-serif;
+        color: white;
   }
 
   h1 {
     font-family: "Galada", cursive;
+    color: white;
   }
 `
