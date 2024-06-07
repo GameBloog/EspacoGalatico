@@ -3,20 +3,23 @@ import {
   Section,
   HorariosDeServico,
   MobileHomePage,
+  DesktopHomePage,
   Button,
   WhatIs,
-  CallToAction,
+  // CallToAction,
   Container,
   Img,
   ImgLogos,
   RoudendImg,
   ImageWithText,
-  ImgItalia,
+  DesktopImageText,
+  ImgEspacofestas,
   SectionImg,
   EspacoFestas,
   ImageWithTextContainer,
   Reserve,
   MobileLastPage,
+  DesktopLastPage,
   BoxShadow,
   Footer,
 } from "./styles.ts"
@@ -53,100 +56,106 @@ export function Home() {
       <main>
         <Section>
           <MobileHomePage>
-            <WhatIs>
-              <p>Buffet infantil</p>
-              <h1>Espaço Galático</h1>
-              <h1>Onde a Magia Acontece!</h1>
-            </WhatIs>
+            <DesktopHomePage>
+              <WhatIs>
+                <p>Buffet infantil</p>
+                <h1>Espaço Galático</h1>
+                <h1>Onde a Magia Acontece!</h1>
 
-            <CallToAction>
-              <p>
-                No Espaço Galático, transformamos sonhos em festas infantis
-                inesquecíveis! Click no botão abaixo e saiba mais.
-              </p>
-            </CallToAction>
+                <h3>
+                  No Espaço Galático, transformamos sonhos em festas infantis
+                  inesquecíveis! Click no botão abaixo e saiba mais.
+                </h3>
+              </WhatIs>
 
-            <RoudendImg>
-              <div>
-                <img src={logo} alt="Imagem de um garoto sorrindo" />
-              </div>
-            </RoudendImg>
+              <RoudendImg>
+                <div>
+                  <img src={logo} alt="Imagem de um garoto sorrindo" />
+                </div>
+              </RoudendImg>
+            </DesktopHomePage>
 
             <Button>Entre em contato conosco!</Button>
           </MobileHomePage>
         </Section>
 
-        <ImageWithTextContainer>
-          <ImageWithText>
-            <Img>
-              <img src={mesaDeJogos} alt="Mesas de jogos" />
-            </Img>
+        <DesktopImageText>
+          <ImageWithTextContainer>
+            <ImageWithText>
+              <Img>
+                <img src={mesaDeJogos} alt="Mesas de jogos" />
+              </Img>
 
-            <h3>Brinquedos e Atividades</h3>
+              <h3>Brinquedos e Atividades</h3>
 
-            <p>
-              Contamos com uma vasta seleção de brinquedos, incluindo
-              playground, piscina de bolinhas, cama elástica, e muito mais. Além
-              disso, nossos recreadores promovem atividades interativas e
-              oficinas criativas para manter a criançada sempre entretida.
-            </p>
-          </ImageWithText>
-        </ImageWithTextContainer>
+              <p>
+                Contamos com uma vasta seleção de brinquedos, incluindo
+                playground, piscina de bolinhas, cama elástica, e muito mais.
+                Além disso, nossos recreadores promovem atividades interativas e
+                oficinas criativas para manter a criançada sempre entretida.
+              </p>
+            </ImageWithText>
+          </ImageWithTextContainer>
 
-        <ImageWithTextContainer>
-          <ImageWithText>
-            <Img>
-              <img src={mesaRefeitorio} alt="Mesas de um refeitorio infantil" />
-            </Img>
+          <ImageWithTextContainer>
+            <ImageWithText>
+              <Img>
+                <img
+                  src={mesaRefeitorio}
+                  alt="Mesas de um refeitorio infantil"
+                />
+              </Img>
 
-            <h2>Cardápio Variado</h2>
-            <p>
-              Nossa cozinha prepara um cardápio diversificado e saudável, com
-              opções que vão desde salgadinhos deliciosos até doces
-              irresistíveis. Tudo pensado para agradar crianças e adultos.
-            </p>
-          </ImageWithText>
-        </ImageWithTextContainer>
+              <h2>Cardápio Variado</h2>
+              <p>
+                Nossa cozinha prepara um cardápio diversificado e saudável, com
+                opções que vão desde salgadinhos deliciosos até doces
+                irresistíveis. Tudo pensado para agradar crianças e adultos.
+              </p>
+            </ImageWithText>
+          </ImageWithTextContainer>
 
-        <ImageWithTextContainer>
-          <ImageWithText>
-            <Img>
-              <img src={espacoPrivativo} alt="" />
-            </Img>
+          <ImageWithTextContainer>
+            <ImageWithText>
+              <Img>
+                <img src={espacoPrivativo} alt="" />
+              </Img>
 
-            <h2>Espaços Privativos</h2>
+              <h2>Espaços Privativos</h2>
 
-            <p>
-              Oferecemos salas privativas para que você possa celebrar com
-              conforto e exclusividade. Perfeito para festas mais intimistas ou
-              eventos especiais.
-            </p>
-          </ImageWithText>
-        </ImageWithTextContainer>
+              <p>
+                Oferecemos salas privativas para que você possa celebrar com
+                conforto e exclusividade. Perfeito para festas mais intimistas
+                ou eventos especiais.
+              </p>
+            </ImageWithText>
+          </ImageWithTextContainer>
 
-        <ImageWithTextContainer>
-          <ImageWithText>
-            <Img>
-              <img src={pacotesEspeciais} alt="" />
-            </Img>
+          <ImageWithTextContainer>
+            <ImageWithText>
+              <Img>
+                <img src={pacotesEspeciais} alt="" />
+              </Img>
 
-            <h2>Pacotes Especiais</h2>
+              <h2>Pacotes Especiais</h2>
 
-            <p>
-              Confira nossos pacotes personalizados, que incluem tudo o que você
-              precisa para uma festa completa, desde a decoração até o buffet.
-              Temos opções para diferentes tamanhos de festas e orçamentos.
-            </p>
-          </ImageWithText>
-        </ImageWithTextContainer>
+              <p>
+                Confira nossos pacotes personalizados, que incluem tudo o que
+                você precisa para uma festa completa, desde a decoração até o
+                buffet. Temos opções para diferentes tamanhos de festas e
+                orçamentos.
+              </p>
+            </ImageWithText>
+          </ImageWithTextContainer>
+        </DesktopImageText>
 
         <SectionImg>
           <EspacoFestas>
             <h3>Agende sua visita e conheça o nosso espaço!</h3>
 
-            <ImgItalia>
+            <ImgEspacofestas>
               <img src={espacoFestas} alt="" />
-            </ImgItalia>
+            </ImgEspacofestas>
 
             <p>
               Oferecemos um espaço temático encantador, com diversas opções de
@@ -158,50 +167,51 @@ export function Home() {
             <Button>Veja nossas redes!</Button>
           </EspacoFestas>
         </SectionImg>
-        
+
         <Reserve>
           <h3>Oque os nossos clientes dizem ..</h3>
 
           <p>
-           "O Buffet Infantil Alegria transformou a
-            festa do meu filho em um dia mágico! A equipe foi incrível em
-            transformar nossas ideias em realidade. A decoração, atividades e
-            comida foram impecáveis. Obrigada por tornar o aniversário do meu
-            filho inesquecível!"
+            "O Buffet Infantil Alegria transformou a festa do meu filho em um
+            dia mágico! A equipe foi incrível em transformar nossas ideias em
+            realidade. A decoração, atividades e comida foram impecáveis.
+            Obrigada por tornar o aniversário do meu filho inesquecível!"
           </p>
         </Reserve>
 
         <Section>
           <MobileLastPage>
-            <WhatIs>
-              <p>Buffet infantil</p>
-              <h1>Espaço Galático</h1>
-              <h1>Onde a Magia Acontece!</h1>
-            </WhatIs>
+            <DesktopLastPage>
+              <WhatIs>
+                <p>Buffet infantil</p>
+                <h1>Espaço Galático</h1>
+                <h1>Onde a Magia Acontece!</h1>
+              </WhatIs>
 
-            <HorariosDeServico>
-              <div>
-                <h2>18 às 23h</h2>
-              </div>
+              <HorariosDeServico>
+                <div>
+                  <h2>18 às 23h</h2>
+                </div>
 
-              <BoxShadow>
-                <h2>Seg à sext</h2>
-              </BoxShadow>
-            </HorariosDeServico>
+                <BoxShadow>
+                  <h2>Seg à sext</h2>
+                </BoxShadow>
+              </HorariosDeServico>
 
-            <p>
-              <strong>Venha viver essa experiência!</strong>
-            </p>
+              <p>
+                <strong>Venha viver essa experiência!</strong>
+              </p>
 
-            <h3>Siga-nos nas mídias</h3>
+              <h3>Siga-nos nas mídias</h3>
 
-            <ImgLogos>
-              <img src={instagram} alt="instagram" />
-              <img src={facebook} alt="facebook" />
-              <img src={whatzapp} alt="Whatapp" />
-            </ImgLogos>
+              <ImgLogos>
+                <img src={instagram} alt="instagram" />
+                <img src={facebook} alt="facebook" />
+                <img src={whatzapp} alt="Whatapp" />
+              </ImgLogos>
 
-            <Button>Inscreve-se e receba nossas novidades</Button>
+              <Button>Inscreve-se e receba nossas novidades</Button>
+            </DesktopLastPage>
           </MobileLastPage>
         </Section>
       </main>

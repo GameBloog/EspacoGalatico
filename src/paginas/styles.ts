@@ -9,6 +9,7 @@ export const Container = styled.body`
 
 export const Header = styled.header`
   margin-bottom: 1.5rem;
+
   @media (min-width: 768px) {
     margin-bottom: 2rem;
   }
@@ -22,6 +23,13 @@ export const Section = styled.section`
 `
 
 //MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
+export const DesktopHomePage = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+`
 
 export const MobileHomePage = styled.div`
   display: flex;
@@ -29,12 +37,6 @@ export const MobileHomePage = styled.div`
   justify-content: center;
   align-items: center;
   gap: 5px;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
 `
 
 export const Button = styled.button`
@@ -57,6 +59,14 @@ export const Button = styled.button`
 
 export const WhatIs = styled.div`
   max-width: 300px;
+
+  h3 {
+    max-width: 312px;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: white;
+    text-align: start;
+  }
 
   h1 {
     font-size: 30px;
@@ -140,7 +150,9 @@ export const HorariosDeServico = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    margin-left: 7rem;
 
     div {
       width: 200px;
@@ -183,8 +195,17 @@ export const ImageWithTextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
   @media (min-width: 768px) {
+    display: block;
     flex-direction: row;
+  }
+`
+
+export const DesktopImageText = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 8px;
   }
 `
 
@@ -277,6 +298,7 @@ export const EspacoFestas = styled.div`
   }
 
   @media (min-width: 768px) {
+    display: block;
     flex-direction: row;
     gap: 2rem;
     padding: 3rem;
@@ -292,14 +314,7 @@ export const EspacoFestas = styled.div`
   }
 `
 
-//EspaçoFestas---------------------------------------------------------------------------------------------------------------------------------------------
-
-export const ImgItalia = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 0.6rem;
-
+export const ImgEspacofestas = styled.div`
   img {
     max-width: 226px;
     max-height: 291px;
@@ -310,6 +325,8 @@ export const ImgItalia = styled.div`
     }
   }
 `
+
+//EspaçoFestas---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const Reserve = styled.div`
   display: flex;
@@ -362,6 +379,7 @@ export const MobileLastPage = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  border: 1px solid black;
 
   h3 {
     color: white;
@@ -377,6 +395,7 @@ export const ImgLogos = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
+  border: 1px solid black;
 
   img {
     width: 50px;
@@ -386,18 +405,26 @@ export const ImgLogos = styled.div`
     @media (min-width: 768px) {
       width: 60px;
       height: 60px;
+      display: block;
     }
+  }
+`
+
+export const DesktopLastPage = styled.div`
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `
 
 export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
-  margin: 10px;
   gap: 1rem;
+  background-color: black;
 
   p {
     text-align: center;
+    color: white
   }
 
   a {
@@ -425,6 +452,7 @@ export const Footer = styled.footer`
     font-size: 16px;
     text-align: center;
     margin-bottom: 2rem;
+    color: white;
   }
 
   @media (min-width: 768px) {
