@@ -76,7 +76,17 @@ export function Home() {
               </RoudendImg>
             </DesktopHomePage>
 
-            <Button>Entre em contato conosco!</Button>
+            <Button
+              onClick={() =>
+                window.open(
+                  "",
+                  "_blank"
+                )
+              }
+            >
+              {" "}
+              Entre em contato
+            </Button>
           </MobileHomePage>
         </Section>
 
@@ -218,15 +228,33 @@ export function Home() {
             <ImgLogos>
               <h3>Siga-nos nas mídias</h3>
               <ButtonImgDiv>
-                <ButtonImg>
-                  <img src={instagram} alt="instagram" />
-                </ButtonImg>
-                <ButtonImg>
-                  <img src={facebook} alt="facebook" />
-                </ButtonImg>
-                <ButtonImg>
-                  <img src={whatzapp} alt="Whatapp" />
-                </ButtonImg>
+                <a
+                  href="https://www.instagram.com/buffetespacogalatico?igsh=MjRwNmFtamMyZ280"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonImg>
+                    <img src={instagram} alt="WhatsApp" />
+                  </ButtonImg>
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonImg>
+                    <img src={facebook} alt="WhatsApp" />
+                  </ButtonImg>
+                </a>
+                <a
+                  href="https://wa.me/5511960767865/?text=urlencodedtex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonImg>
+                    <img src={whatzapp} alt="WhatsApp" />
+                  </ButtonImg>
+                </a>
               </ButtonImgDiv>
             </ImgLogos>
 
