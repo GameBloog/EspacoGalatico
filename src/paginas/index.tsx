@@ -18,6 +18,7 @@ import {
   EspacoFestas,
   ImageWithTextContainer,
   Reserve,
+  DesktopMidPage,
   MobileLastPage,
   DesktopLastPage,
   BoxShadow,
@@ -149,45 +150,41 @@ export function Home() {
           </ImageWithTextContainer>
         </DesktopImageText>
 
-        <SectionImg>
-          <EspacoFestas>
-            <h3>Agende sua visita e conheça o nosso espaço!</h3>
+        <DesktopMidPage>
+          <SectionImg>
+            <EspacoFestas>
+              <h3>Agende sua visita e conheça o nosso espaço!</h3>
 
-            <ImgEspacofestas>
-              <img src={espacoFestas} alt="" />
-            </ImgEspacofestas>
+              <p>
+                Oferecemos um espaço temático encantador, com diversas opções de
+                brinquedos e atividades, um cardápio delicioso e saudável, além
+                de uma equipe dedicada e experiente para tornar cada festa única
+                e especial.
+              </p>
+
+              <Button>Veja nossas redes!</Button>
+            </EspacoFestas>
+          </SectionImg>
+
+          <ImgEspacofestas>
+            <img src={espacoFestas} alt="" />
+          </ImgEspacofestas>
+
+          <Reserve>
+            <h3>Oque os nossos clientes dizem ..</h3>
 
             <p>
-              Oferecemos um espaço temático encantador, com diversas opções de
-              brinquedos e atividades, um cardápio delicioso e saudável, além de
-              uma equipe dedicada e experiente para tornar cada festa única e
-              especial.
+              "O Buffet Infantil Alegria transformou a festa do meu filho em um
+              dia mágico! A equipe foi incrível em transformar nossas ideias em
+              realidade. A decoração, atividades e comida foram impecáveis.
+              Obrigada por tornar o aniversário do meu filho inesquecível!"
             </p>
-
-            <Button>Veja nossas redes!</Button>
-          </EspacoFestas>
-        </SectionImg>
-
-        <Reserve>
-          <h3>Oque os nossos clientes dizem ..</h3>
-
-          <p>
-            "O Buffet Infantil Alegria transformou a festa do meu filho em um
-            dia mágico! A equipe foi incrível em transformar nossas ideias em
-            realidade. A decoração, atividades e comida foram impecáveis.
-            Obrigada por tornar o aniversário do meu filho inesquecível!"
-          </p>
-        </Reserve>
+          </Reserve>
+        </DesktopMidPage>
 
         <Section>
           <MobileLastPage>
             <DesktopLastPage>
-              <WhatIs>
-                <p>Buffet infantil</p>
-                <h1>Espaço Galático</h1>
-                <h1>Onde a Magia Acontece!</h1>
-              </WhatIs>
-
               <HorariosDeServico>
                 <div>
                   <h2>18 às 23h</h2>
@@ -198,20 +195,25 @@ export function Home() {
                 </BoxShadow>
               </HorariosDeServico>
 
+              <WhatIs>
+                <p>Buffet infantil</p>
+                <h1>Espaço Galático</h1>
+                <h1>Onde a Magia Acontece!</h1>
+              </WhatIs>
+
               <p>
                 <strong>Venha viver essa experiência!</strong>
               </p>
-
-              <h3>Siga-nos nas mídias</h3>
-
-              <ImgLogos>
-                <img src={instagram} alt="instagram" />
-                <img src={facebook} alt="facebook" />
-                <img src={whatzapp} alt="Whatapp" />
-              </ImgLogos>
-
-              <Button>Inscreve-se e receba nossas novidades</Button>
             </DesktopLastPage>
+
+            <ImgLogos>
+              <h3>Siga-nos nas mídias</h3>
+              <img src={instagram} alt="instagram" />
+              <img src={facebook} alt="facebook" />
+              <img src={whatzapp} alt="Whatapp" />
+            </ImgLogos>
+
+            <Button>Inscreve-se e receba nossas novidades</Button>
           </MobileLastPage>
         </Section>
       </main>

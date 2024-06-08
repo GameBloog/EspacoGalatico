@@ -152,7 +152,6 @@ export const HorariosDeServico = styled.div`
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    margin-left: 7rem;
 
     div {
       width: 200px;
@@ -168,10 +167,10 @@ export const HorariosDeServico = styled.div`
 //HorariosDeServiço---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const BoxShadow = styled.div`
-  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -3px 6px #f87b07;
 
   @media (min-width: 768px) {
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -4px 0px 5px #f87b07;
   }
 `
 
@@ -335,7 +334,6 @@ export const Reserve = styled.div`
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  margin-bottom: 3rem;
   margin-bottom: 1.5rem;
 
   h3 {
@@ -357,7 +355,7 @@ export const Reserve = styled.div`
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
 
     h3 {
@@ -370,6 +368,11 @@ export const Reserve = styled.div`
     }
   }
 `
+export const DesktopMidPage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 //MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -379,40 +382,45 @@ export const MobileLastPage = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  border: 1px solid black;
 
   h3 {
     color: white;
   }
 
   @media (min-width: 768px) {
+    display: flex;
     flex-direction: row;
+    gap: 1.5rem;
   }
 `
 
 export const ImgLogos = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid black;
+
+  h3{
+    margin-bottom: 1rem
+  }
 
   img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    gap: 1rem;
 
     @media (min-width: 768px) {
       width: 60px;
       height: 60px;
-      display: block;
+      gap: 2rem;
     }
   }
 `
 
 export const DesktopLastPage = styled.div`
   @media (min-width: 768px) {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
   }
 `
 
