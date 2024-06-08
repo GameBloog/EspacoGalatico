@@ -6,7 +6,6 @@ import {
   DesktopHomePage,
   Button,
   WhatIs,
-  // CallToAction,
   Container,
   Img,
   ImgLogos,
@@ -18,14 +17,15 @@ import {
   EspacoFestas,
   ImageWithTextContainer,
   Reserve,
-  DesktopMidPage,
   MobileLastPage,
   DesktopLastPage,
   BoxShadow,
   Footer,
+  MidleDiv,
+  ButtonImg,
+  ButtonImgDiv,
+  JustForStyle,
 } from "./styles.ts"
-
-// import garoto from "../assets/imagens/garoto-playground.jpg" Se n usarmos iremos apagar está linha
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
 import mesaRefeitorio from "../assets/imagens/Mesas-refeitorio.jpg"
@@ -107,7 +107,7 @@ export function Home() {
                 />
               </Img>
 
-              <h2>Cardápio Variado</h2>
+              <h3>Cardápio Variado</h3>
               <p>
                 Nossa cozinha prepara um cardápio diversificado e saudável, com
                 opções que vão desde salgadinhos deliciosos até doces
@@ -122,7 +122,7 @@ export function Home() {
                 <img src={espacoPrivativo} alt="" />
               </Img>
 
-              <h2>Espaços Privativos</h2>
+              <h3>Espaços Privativos</h3>
 
               <p>
                 Oferecemos salas privativas para que você possa celebrar com
@@ -138,7 +138,7 @@ export function Home() {
                 <img src={pacotesEspeciais} alt="" />
               </Img>
 
-              <h2>Pacotes Especiais</h2>
+              <h3>Pacotes Especiais</h3>
 
               <p>
                 Confira nossos pacotes personalizados, que incluem tudo o que
@@ -150,7 +150,7 @@ export function Home() {
           </ImageWithTextContainer>
         </DesktopImageText>
 
-        <DesktopMidPage>
+        <MidleDiv>
           <SectionImg>
             <EspacoFestas>
               <h3>Agende sua visita e conheça o nosso espaço!</h3>
@@ -180,7 +180,7 @@ export function Home() {
               Obrigada por tornar o aniversário do meu filho inesquecível!"
             </p>
           </Reserve>
-        </DesktopMidPage>
+        </MidleDiv>
 
         <Section>
           <MobileLastPage>
@@ -195,25 +195,42 @@ export function Home() {
                 </BoxShadow>
               </HorariosDeServico>
 
-              <WhatIs>
-                <p>Buffet infantil</p>
-                <h1>Espaço Galático</h1>
-                <h1>Onde a Magia Acontece!</h1>
-              </WhatIs>
+              <JustForStyle>
+                <WhatIs>
+                  <p>Buffet infantil</p>
+                  <h1>Espaço Galático</h1>
+                  <h1>Onde a Magia Acontece!</h1>
+                </WhatIs>
+              </JustForStyle>
 
               <p>
                 <strong>Venha viver essa experiência!</strong>
               </p>
             </DesktopLastPage>
 
-            <ImgLogos>
+            {/* <ImgLogos>
               <h3>Siga-nos nas mídias</h3>
               <img src={instagram} alt="instagram" />
               <img src={facebook} alt="facebook" />
               <img src={whatzapp} alt="Whatapp" />
+            </ImgLogos> */}
+
+            <ImgLogos>
+              <h3>Siga-nos nas mídias</h3>
+              <ButtonImgDiv>
+                <ButtonImg>
+                  <img src={instagram} alt="instagram" />
+                </ButtonImg>
+                <ButtonImg>
+                  <img src={facebook} alt="facebook" />
+                </ButtonImg>
+                <ButtonImg>
+                  <img src={whatzapp} alt="Whatapp" />
+                </ButtonImg>
+              </ButtonImgDiv>
             </ImgLogos>
 
-            <Button>Inscreve-se e receba nossas novidades</Button>
+            {/* <Button>Inscreve-se e receba nossas novidades</Button> */}
           </MobileLastPage>
         </Section>
       </main>
@@ -226,7 +243,9 @@ export function Home() {
         <a href="https://maps.app.goo.gl/vxUyHoxKyLb4xnux9" target="_blank">
           Nosso Endereço no Google Maps
         </a>
-        <h6>Restaurante Cheff Petter 2023</h6>
+        <div>
+          <h6>Espaço Galático 2024</h6>
+        </div>
       </Footer>
     </Container>
   )

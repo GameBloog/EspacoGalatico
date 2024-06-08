@@ -22,12 +22,46 @@ export const Section = styled.section`
   }
 `
 
-//MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
-export const DesktopHomePage = styled.div`
-  @media (min-width: 768px) {
+export const HorariosDeServico = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    width: 138px;
+    height: 41px;
+    border-radius: 7px;
+    margin-top: 0.2rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  h2 {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  @media (min-width: 768px) {
     flex-direction: row;
-    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+
+    div {
+      width: 200px;
+      height: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
   }
 `
 
@@ -39,21 +73,11 @@ export const MobileHomePage = styled.div`
   gap: 5px;
 `
 
-export const Button = styled.button`
-  width: 250px;
-  height: 3rem;
-  border-radius: 10px;
-  border: none;
-  align-items: center;
-  padding: 0.2rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(270deg, #f87b07 0%, #ff8c00 100%);
-  color: white;
-
+export const DesktopHomePage = styled.div`
   @media (min-width: 768px) {
-    width: 300px;
-    height: 3.5rem;
-    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 `
 
@@ -94,18 +118,10 @@ export const WhatIs = styled.div`
   }
 `
 
-export const CallToAction = styled.div`
-  max-width: 312px;
-  text-align: center;
-  margin-bottom: 1.2rem;
-
-  @media (min-width: 768px) {
-    max-width: 600px;
-    margin-bottom: 2rem;
-  }
-`
-
 export const RoudendImg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img {
     width: 250px;
     height: 250px;
@@ -119,52 +135,106 @@ export const RoudendImg = styled.div`
   }
 `
 
-//MobileHomePage---------------------------------------------------------------------------------------------------------------------------------------------
-
-//HorariosDeServiço---------------------------------------------------------------------------------------------------------------------------------------------
-
-export const HorariosDeServico = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+export const Button = styled.button`
+  width: 250px;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
   align-items: center;
-
-  div {
-    width: 138px;
-    height: 41px;
-    border-radius: 7px;
-    margin-top: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-  }
-
-  h2 {
-    color: black;
-    font-family: "Poppins", sans-serif;
-    line-height: 30px;
-    font-weight: 700;
-    font-size: 20px;
-  }
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(270deg, #f87b07 0%, #ff8c00 100%);
+  color: white;
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-
-    div {
-      width: 200px;
-      height: 50px;
-    }
-
-    h2 {
-      font-size: 24px;
-    }
+    margin-top: 2rem;
+    width: 300px;
+    height: 3.5rem;
+    font-size: 1.2rem;
   }
 `
 
-//HorariosDeServiço---------------------------------------------------------------------------------------------------------------------------------------------
+export const CallToAction = styled.div`
+  max-width: 312px;
+  text-align: center;
+  margin-bottom: 1.2rem;
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+`
+
+export const DesktopImageText = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 2rem 3rem 2rem;
+    gap: 1.5rem;
+  }
+`
+
+export const ImageWithTextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    display: block;
+    flex-direction: row;
+    height: 100vh;
+  }
+`
+
+export const ImageWithText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
+  max-width: 250px;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: ${(props) => props.theme["orange-500"]};
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  h3 {
+    margin: 0;
+    color: white;
+  }
+
+  p {
+    max-width: 200px;
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    height: 40rem;
+    padding: 3rem;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      max-width: 200px;
+      font-size: 1rem;
+    }
+  }
+`
 
 export const BoxShadow = styled.div`
   box-shadow: 0px -3px 6px #f87b07;
@@ -190,83 +260,20 @@ export const Img = styled.div`
   }
 `
 
-export const ImageWithTextContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  @media (min-width: 768px) {
-    display: block;
-    flex-direction: row;
-  }
-`
-
-export const DesktopImageText = styled.div`
+export const MidleDiv = styled.div`
   @media (min-width: 768px) {
     display: flex;
-    gap: 8px;
-  }
-`
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 0.2rem;
 
-export const ImageWithText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 1.2rem;
-  max-width: 250px;
-  margin-bottom: 3rem;
-  padding: 2rem;
-  border-radius: 2rem;
-  background-color: ${(props) => props.theme["orange-500"]};
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px; /* Opcional: para cantos arredondados */
-  }
-
-  h3 {
-    margin: 0;
-    color: white;
-  }
-
-  h2 {
-    color: white;
-  }
-
-  p {
-    max-width: 200px;
-    margin: 0;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 500px;
-    padding: 3rem;
-
-    h3 {
-      font-size: 1.5rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-    }
+    gap: 3rem;
   }
 `
 
 export const SectionImg = styled.section`
   margin-bottom: 2rem;
-  @media (min-width: 768px) {
-    margin-bottom: 4rem;
-  }
 `
-
-//EspaçoFestas---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const EspacoFestas = styled.div`
   display: flex;
@@ -275,7 +282,6 @@ export const EspacoFestas = styled.div`
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  /* background-color: ${(props) => props.theme["green-500"]}; */
   border-radius: 1rem;
 
   h3 {
@@ -303,29 +309,34 @@ export const EspacoFestas = styled.div`
     padding: 3rem;
 
     h3 {
-      font-size: 36px;
+      font-size: 2rem;
     }
 
     p {
       font-size: 1.1rem;
-      width: 22rem;
+      max-width: 18rem;
     }
   }
 `
 
 export const ImgEspacofestas = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   img {
     max-width: 226px;
     max-height: 291px;
 
     @media (min-width: 768px) {
-      max-width: 300px;
-      max-height: 380px;
+      max-width: 550px;
     }
   }
 `
-
-//EspaçoFestas---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const Reserve = styled.div`
   display: flex;
@@ -334,7 +345,7 @@ export const Reserve = styled.div`
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 
   h3 {
     font-size: 30px;
@@ -364,14 +375,9 @@ export const Reserve = styled.div`
 
     p {
       font-size: 1.1rem;
-      width: 22rem;
+      max-width: 18rem;
     }
   }
-`
-export const DesktopMidPage = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `
 
 //MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------
@@ -394,27 +400,9 @@ export const MobileLastPage = styled.div`
   }
 `
 
-export const ImgLogos = styled.div`
-
-  h3{
-    margin-bottom: 1rem
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    gap: 1rem;
-
-    @media (min-width: 768px) {
-      width: 60px;
-      height: 60px;
-      gap: 2rem;
-    }
-  }
-`
-
 export const DesktopLastPage = styled.div`
+  margin-bottom: 1.5rem;
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -424,24 +412,83 @@ export const DesktopLastPage = styled.div`
   }
 `
 
+export const JustForStyle = styled.div`
+  margin-top: 2.5rem;
+`
+
+export const ImgLogos = styled.div`
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
+
+export const ButtonImgDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+`
+
+export const ButtonImg = styled.button`
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+`
+
 export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 1rem;
   background-color: black;
+  justify-content: center;
+  align-items: center;
 
   p {
+    width: 90%;
     text-align: center;
-    color: white
+    color: white;
   }
 
   a {
-    max-width: 100%;
+    max-width: 90%;
     display: inline-block;
     padding: 0.6rem 1.2rem;
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+
     text-decoration: none;
     margin-bottom: 1rem;
     color: #fff;
@@ -466,11 +513,16 @@ export const Footer = styled.footer`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
+
+    div {
+      padding-top: 0.5rem;
+    }
 
     p,
     h6 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     a {
