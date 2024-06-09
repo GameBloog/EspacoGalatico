@@ -25,6 +25,7 @@ import {
   ButtonImg,
   ButtonImgDiv,
   JustForStyle,
+  WhatIsLastPage,
 } from "./styles.ts"
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
@@ -76,7 +77,16 @@ export function Home() {
               </RoudendImg>
             </DesktopHomePage>
 
-            <Button>Entre em contato conosco!</Button>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://wa.me/5511960767865/?text=urlencodedtex",
+                  "_blank"
+                )
+              }
+            >
+              Entre em contato
+            </Button>
           </MobileHomePage>
         </Section>
 
@@ -162,7 +172,14 @@ export function Home() {
                 e especial.
               </p>
 
-              <Button>Veja nossas redes!</Button>
+              <Button
+                onClick={() => {
+                  const element = document.getElementById("socialMediaSection")
+                  element?.scrollIntoView({ behavior: "smooth" })
+                }}
+              >
+                Veja nossas redes!
+              </Button>
             </EspacoFestas>
           </SectionImg>
 
@@ -196,11 +213,11 @@ export function Home() {
               </HorariosDeServico>
 
               <JustForStyle>
-                <WhatIs>
+                <WhatIsLastPage>
                   <p>Buffet infantil</p>
                   <h1>Espaço Galático</h1>
                   <h1>Onde a Magia Acontece!</h1>
-                </WhatIs>
+                </WhatIsLastPage>
               </JustForStyle>
 
               <p>
@@ -208,29 +225,38 @@ export function Home() {
               </p>
             </DesktopLastPage>
 
-            {/* <ImgLogos>
-              <h3>Siga-nos nas mídias</h3>
-              <img src={instagram} alt="instagram" />
-              <img src={facebook} alt="facebook" />
-              <img src={whatzapp} alt="Whatapp" />
-            </ImgLogos> */}
-
-            <ImgLogos>
+            <ImgLogos id="socialMediaSection">
               <h3>Siga-nos nas mídias</h3>
               <ButtonImgDiv>
-                <ButtonImg>
-                  <img src={instagram} alt="instagram" />
-                </ButtonImg>
-                <ButtonImg>
-                  <img src={facebook} alt="facebook" />
-                </ButtonImg>
-                <ButtonImg>
-                  <img src={whatzapp} alt="Whatapp" />
-                </ButtonImg>
+                <a
+                  href="https://www.instagram.com/buffetespacogalatico?igsh=MjRwNmFtamMyZ280"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonImg>
+                    <img src={instagram} alt="WhatsApp" />
+                  </ButtonImg>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100091516518753"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonImg>
+                    <img src={facebook} alt="WhatsApp" />
+                  </ButtonImg>
+                </a>
+                <a
+                  href="https://wa.me/5511960767865/?text=urlencodedtex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonImg>
+                    <img src={whatzapp} alt="WhatsApp" />
+                  </ButtonImg>
+                </a>
               </ButtonImgDiv>
             </ImgLogos>
-
-            {/* <Button>Inscreve-se e receba nossas novidades</Button> */}
           </MobileLastPage>
         </Section>
       </main>
