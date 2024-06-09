@@ -80,12 +80,11 @@ export function Home() {
             <Button
               onClick={() =>
                 window.open(
-                  "",
+                  "https://wa.me/5511960767865/?text=urlencodedtex",
                   "_blank"
                 )
               }
             >
-              {" "}
               Entre em contato
             </Button>
           </MobileHomePage>
@@ -173,7 +172,14 @@ export function Home() {
                 e especial.
               </p>
 
-              <Button>Veja nossas redes!</Button>
+              <Button
+                onClick={() => {
+                  const element = document.getElementById("socialMediaSection")
+                  element?.scrollIntoView({ behavior: "smooth" })
+                }}
+              >
+                Veja nossas redes!
+              </Button>
             </EspacoFestas>
           </SectionImg>
 
@@ -219,7 +225,7 @@ export function Home() {
               </p>
             </DesktopLastPage>
 
-            <ImgLogos>
+            <ImgLogos id="socialMediaSection">
               <h3>Siga-nos nas mídias</h3>
               <ButtonImgDiv>
                 <a
@@ -232,7 +238,7 @@ export function Home() {
                   </ButtonImg>
                 </a>
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/profile.php?id=100091516518753"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -251,7 +257,6 @@ export function Home() {
                 </a>
               </ButtonImgDiv>
             </ImgLogos>
-
           </MobileLastPage>
         </Section>
       </main>
