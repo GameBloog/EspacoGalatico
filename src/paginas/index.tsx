@@ -25,6 +25,7 @@ import {
   ButtonImg,
   ButtonImgDiv,
   JustForStyle,
+  WhatIsLastPage,
 } from "./styles.ts"
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
@@ -206,24 +207,17 @@ export function Home() {
               </HorariosDeServico>
 
               <JustForStyle>
-                <WhatIs>
+                <WhatIsLastPage>
                   <p>Buffet infantil</p>
                   <h1>Espaço Galático</h1>
                   <h1>Onde a Magia Acontece!</h1>
-                </WhatIs>
+                </WhatIsLastPage>
               </JustForStyle>
 
               <p>
                 <strong>Venha viver essa experiência!</strong>
               </p>
             </DesktopLastPage>
-
-            {/* <ImgLogos>
-              <h3>Siga-nos nas mídias</h3>
-              <img src={instagram} alt="instagram" />
-              <img src={facebook} alt="facebook" />
-              <img src={whatzapp} alt="Whatapp" />
-            </ImgLogos> */}
 
             <ImgLogos>
               <h3>Siga-nos nas mídias</h3>
@@ -258,7 +252,6 @@ export function Home() {
               </ButtonImgDiv>
             </ImgLogos>
 
-            {/* <Button>Inscreve-se e receba nossas novidades</Button> */}
           </MobileLastPage>
         </Section>
       </main>

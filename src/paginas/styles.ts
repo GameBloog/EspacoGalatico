@@ -49,6 +49,21 @@ export const HorariosDeServico = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 200px;
+      height: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media (min-width: 1360px) {
+    flex-direction: row;
     justify-content: start;
     align-items: start;
     margin-left: 9rem;
@@ -166,7 +181,7 @@ export const CallToAction = styled.div`
 `
 
 export const DesktopImageText = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     display: flex;
     justify-content: space-between;
 
@@ -180,7 +195,7 @@ export const ImageWithTextContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     display: block;
     flex-direction: row;
     height: 100vh;
@@ -216,7 +231,7 @@ export const ImageWithText = styled.div`
     margin: 0;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     max-width: 500px;
     height: 40rem;
     padding: 3rem;
@@ -253,7 +268,7 @@ export const Img = styled.div`
     width: 120px;
     height: 120px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1360px) {
       width: 150px;
       height: 150px;
     }
@@ -261,9 +276,10 @@ export const Img = styled.div`
 `
 
 export const MidleDiv = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 6rem;
     margin-bottom: 0.2rem;
 
@@ -302,7 +318,7 @@ export const EspacoFestas = styled.div`
     line-height: 25px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     display: block;
     flex-direction: row;
     gap: 2rem;
@@ -365,7 +381,7 @@ export const Reserve = styled.div`
     line-height: 25px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     flex-direction: column;
     gap: 2rem;
 
@@ -375,12 +391,10 @@ export const Reserve = styled.div`
 
     p {
       font-size: 1.1rem;
-      max-width: 18rem;
+      width: 16rem;
     }
   }
 `
-
-//MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------
 
 export const MobileLastPage = styled.div`
   display: flex;
@@ -393,7 +407,7 @@ export const MobileLastPage = styled.div`
     color: white;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
@@ -406,6 +420,14 @@ export const DesktopLastPage = styled.div`
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media (min-width: 1360px) {
+    display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: start;
     gap: 1rem;
@@ -416,6 +438,53 @@ export const JustForStyle = styled.div`
   margin-top: 2.5rem;
 `
 
+export const WhatIsLastPage = styled.div`
+  max-width: 300px;
+
+  h3 {
+    max-width: 312px;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: white;
+    text-align: start;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: "Galada", cursive;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    color: #f87b07;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 1360px) {
+    max-width: 600px;
+
+    h1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+`
+
 export const ImgLogos = styled.div`
   align-items: center;
   justify-content: center;
@@ -424,7 +493,7 @@ export const ImgLogos = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -461,7 +530,7 @@ export const ButtonImg = styled.button`
     border-radius: 50%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1360px) {
     width: 60px;
     height: 60px;
   }
@@ -515,7 +584,6 @@ export const Footer = styled.footer`
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-
     div {
       padding-top: 0.5rem;
     }
@@ -530,5 +598,3 @@ export const Footer = styled.footer`
     }
   }
 `
-
-//MobileLastPage---------------------------------------------------------------------------------------------------------------------------------------------
