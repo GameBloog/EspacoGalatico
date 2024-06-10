@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   margin-top: 3rem;
+
   @media (min-width: 768px) {
     margin-top: 4rem;
   }
@@ -189,8 +190,10 @@ export const DesktopImageText = styled.div`
   @media (min-width: 1360px) {
     display: flex;
     justify-content: space-between;
+    margin-left: 2.5rem;
+    margin-top: 0rem;
+    margin-right: 2rem;
 
-    margin: 0 2rem 3rem 2rem;
     gap: 1.5rem;
   }
 `
@@ -285,7 +288,7 @@ export const MidleDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 1rem;
     margin-bottom: 0.2rem;
 
     gap: 3rem;
