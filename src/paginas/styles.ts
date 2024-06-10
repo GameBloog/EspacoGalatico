@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-export const Container = styled.body`
-  margin-top: 2rem;
+export const Container = styled.div`
+  margin-top: 3rem;
   @media (min-width: 768px) {
     margin-top: 4rem;
   }
@@ -98,13 +98,13 @@ export const DesktopHomePage = styled.div`
 
 export const WhatIs = styled.div`
   max-width: 300px;
+  margin-left: 1rem;
 
   h3 {
     max-width: 312px;
-    text-align: center;
-    margin-bottom: 1.2rem;
     color: white;
     text-align: start;
+    font-size: larger;
   }
 
   h1 {
@@ -115,12 +115,9 @@ export const WhatIs = styled.div`
     color: #f87b07;
   }
 
-  p {
-    font-family: "Poppins", sans-serif;
-  }
-
   @media (min-width: 768px) {
     max-width: 600px;
+    margin-left: 0;
 
     h1 {
       font-size: 36px;
@@ -137,6 +134,7 @@ export const RoudendImg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.4rem;
   img {
     width: 250px;
     height: 250px;
@@ -151,7 +149,7 @@ export const RoudendImg = styled.div`
 `
 
 export const Button = styled.button`
-  width: 250px;
+  width: 280px;
   height: 3rem;
   border-radius: 10px;
   border: none;
@@ -170,7 +168,7 @@ export const Button = styled.button`
 
   @media (min-width: 768px) {
     margin-top: 2rem;
-    width: 300px;
+    width: 350px;
     height: 3.5rem;
     font-size: 1.2rem;
   }
@@ -295,7 +293,7 @@ export const MidleDiv = styled.div`
 `
 
 export const SectionImg = styled.section`
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 `
 
 export const EspacoFestas = styled.div`
@@ -304,7 +302,6 @@ export const EspacoFestas = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
   border-radius: 1rem;
 
   h3 {
@@ -368,7 +365,8 @@ export const Reserve = styled.div`
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 
   h3 {
     font-size: 30px;
@@ -410,10 +408,6 @@ export const MobileLastPage = styled.div`
   align-items: center;
   gap: 1.5rem;
 
-  h3 {
-    color: white;
-  }
-
   @media (min-width: 1360px) {
     display: flex;
     flex-direction: row;
@@ -424,12 +418,24 @@ export const MobileLastPage = styled.div`
 export const DesktopLastPage = styled.div`
   margin-bottom: 1.5rem;
 
+  h3 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: white;
+    text-align: start;
+    font-size: larger;
+  }
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    h3 {
+      text-align: center;
+    }
   }
 
   @media (min-width: 1360px) {
@@ -437,6 +443,7 @@ export const DesktopLastPage = styled.div`
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    text-align: center;
     gap: 1rem;
   }
 `
@@ -454,6 +461,7 @@ export const WhatIsLastPage = styled.div`
     margin-bottom: 1.2rem;
     color: white;
     text-align: start;
+    font-size: larger;
   }
 
   h1 {
@@ -464,22 +472,23 @@ export const WhatIsLastPage = styled.div`
     color: #f87b07;
   }
 
-  p {
-    font-family: "Poppins", sans-serif;
-  }
-
   @media (min-width: 768px) {
-    h1 {
+    max-width: 600px;
+
+    h3 {
+      max-width: 400px;
       text-align: center;
     }
 
-    p {
+    h1 {
+      font-size: 36px;
       text-align: center;
+      line-height: 48px;
     }
   }
 
   @media (min-width: 1360px) {
-    max-width: 600px;
+    max-width: 650px;
 
     h1 {
       font-size: 36px;
@@ -495,8 +504,10 @@ export const WhatIsLastPage = styled.div`
 export const ImgLogos = styled.div`
   align-items: center;
   justify-content: center;
+  margin-top: 1.5rem;
 
   h3 {
+    color: white;
     margin-bottom: 1rem;
   }
 
@@ -540,6 +551,29 @@ export const ButtonImg = styled.button`
   @media (min-width: 1360px) {
     width: 60px;
     height: 60px;
+  }
+`
+
+export const BotaoFixo = styled.a`
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+
+  img {
+    width: 6.5rem;
+    height: 2.5em;
+  }
+
+  @media (min-width: 1024px) {
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+
+    img {
+      width: 13.5rem;
+      height: 3em;
+    }
   }
 `
 
