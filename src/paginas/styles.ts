@@ -561,7 +561,7 @@ export const BotaoFixo = styled.a`
   z-index: 1000;
 
   img {
-    width: 6.5rem;
+    width: 7.5rem;
     height: 2.5em;
   }
 
@@ -571,8 +571,8 @@ export const BotaoFixo = styled.a`
     z-index: 1000;
 
     img {
-      width: 13.5rem;
-      height: 3em;
+      width: 14.5rem;
+      height: 3.5em;
     }
   }
 `
