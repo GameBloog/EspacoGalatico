@@ -36,6 +36,9 @@ import facebook from "../assets/imagens/Facebook.png"
 import whatzapp from "../assets/imagens/Whatapp.jpg"
 import logo from "../assets/imagens/logo.jpg"
 import whatsappcanto from "../assets/imagens/wppdecanto.png"
+//import { Carousel } from "../components/slideImg/index.tsx"
+
+///const images = [logo, whatsappcanto, whatsappcanto]
 
 export function Home() {
   return (
@@ -252,6 +255,11 @@ export function Home() {
           <img src={whatsappcanto} alt="Botão para whatsapp" />
         </BotaoFixo>
       </main>
+
+      {/* <div className="App">
+        <h1>Image Carousel</h1>
+        <Carousel images={images} />
+      </div> */}
 
       <Footer>
         <p>
