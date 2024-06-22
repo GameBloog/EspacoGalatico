@@ -106,6 +106,7 @@ export const WhatIs = styled.div`
     color: white;
     text-align: start;
     font-size: larger;
+    margin-bottom: 1rem;
   }
 
   h1 {

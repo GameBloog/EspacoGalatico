@@ -37,6 +37,7 @@ import whatzapp from "../assets/imagens/Whatapp.jpg"
 import logo from "../assets/imagens/logo.jpg"
 import whatsappcanto from "../assets/imagens/wppdecantoV2.png"
 import { Carousel } from "../components/slideImg/index.tsx"
+import { CarouselwithText } from "../components/slideCardapio/index.tsx"
 //import whatsappcanto from "../assets/imagens/wppdecanto.png"
 //import { Carousel } from "../components/slideImg/index.tsx"
 
@@ -45,20 +46,6 @@ import { Carousel } from "../components/slideImg/index.tsx"
 export function Home() {
   return (
     <Container>
-      {/* <Header>
-        <Section>
-          <HorariosDeServico>
-            <div>
-              <h2>18 às 23h</h2>
-            </div>
-
-            <BoxShadow>
-              <h2>Seg à sext</h2>
-            </BoxShadow>
-          </HorariosDeServico>
-        </Section>
-      </Header> */}
-
       <main>
         <Section>
           <MobileHomePage>
@@ -70,8 +57,8 @@ export function Home() {
 
                 <h3>
                   Aqui no Buffet, transformamos sonhos em festas inesquecíveis!
-                  Click abaixo e venha nos conhecer e fazer um orçamento.
                 </h3>
+                <h3>Click abaixo e venha nos conhecer e fazer um orçamento.</h3>
               </WhatIs>
 
               <RoudendImg>
@@ -146,7 +133,6 @@ export function Home() {
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
-
           <ImageWithTextContainer>
             <ImageWithText>
               <Img>
@@ -160,12 +146,9 @@ export function Home() {
               <p>
                 Venha conhecer a grande variedade de comidinhas deliciosas que
                 estão inclusas dentro dos nossos menus, são eles:
-                {/* 
-                  //TEXTO COMENTADO POIS ESTA QUEBRANDO O DESKTOP, DA UMA OLHADA
-                
                 <br />
                 <br />
-                <strong>Marte</strong> nosso menu tradicionalíssimo de{" "}
+                <strong>Marte</strong> nosso menu tradicionalíssimo de
                 <strong>Massa</strong>.
                 <br />
                 <br />
@@ -183,11 +166,11 @@ export function Home() {
                 refrigerantes 1ª linha, sucos e água.
                 <br />
                 Tudo isso incluso e a vontade na sua festa, para deixar todos os
-                seus convidados felizes. */}
+                seus convidados felizes.
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
-
+          <CarouselwithText/>
           <ImageWithTextContainer>
             <ImageWithText>
               <Img>
@@ -206,7 +189,6 @@ export function Home() {
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
-
           {/*
           //DIV DAS FRASES SOLTAS
 
@@ -215,7 +197,6 @@ export function Home() {
               Temos opções para diferentes tamanhos de festas e orçamentos.{" "}
             </h3>
           </SingleWords> */}
-
           <ImageWithTextContainer>
             <ImageWithText>
               <Img>
