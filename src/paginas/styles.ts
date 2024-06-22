@@ -185,6 +185,22 @@ export const CallToAction = styled.div`
     margin-bottom: 2rem;
   }
 `
+export const SingleWords = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  gap: 10px;
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Galada", cursive;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    color: #f87b07;
+  }
+`
+
 
 export const DesktopImageText = styled.div`
   @media (min-width: 1360px) {

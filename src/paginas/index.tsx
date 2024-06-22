@@ -24,6 +24,7 @@ import {
   JustForStyle,
   WhatIsLastPage,
   BotaoFixo,
+  // SingleWords,
 } from "./styles.ts"
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
@@ -35,7 +36,8 @@ import instagram from "../assets/imagens/instagram.png"
 import facebook from "../assets/imagens/Facebook.png"
 import whatzapp from "../assets/imagens/Whatapp.jpg"
 import logo from "../assets/imagens/logo.jpg"
-import whatsappcanto from "../assets/imagens/wppdecanto.png"
+import whatsappcanto from "../assets/imagens/wppdecantoV2.png"
+//import whatsappcanto from "../assets/imagens/wppdecanto.png"
 //import { Carousel } from "../components/slideImg/index.tsx"
 
 ///const images = [logo, whatsappcanto, whatsappcanto]
@@ -67,8 +69,8 @@ export function Home() {
                 <h1>Onde a Magia Acontece!</h1>
 
                 <h3>
-                  No Espaço Galático, transformamos sonhos em festas infantis
-                  inesquecíveis! Click no botão abaixo e saiba mais.
+                  Aqui no Buffet, transformamos sonhos em festas inesquecíveis!
+                  Click abaixo e venha nos conhecer e fazer um orçamento.
                 </h3>
               </WhatIs>
 
@@ -156,10 +158,29 @@ export function Home() {
 
               <h3>Cardápio Variado</h3>
               <p>
-                Nossa cozinha prepara um cardápio diversificado e saudável, com
-                opções que vão de feijoada, strogonoff a massas, com salgadinhos
-                deliciosos e doces irresistíveis. Tudo pensado para agradar
-                crianças e adultos.
+                Venha conhecer a grande variedade de comidinhas deliciosas que
+                estão inclusas dentro dos nossos menus, são eles:
+                <br />
+                <br />
+                <strong>Marte</strong> nosso menu tradicionalíssimo de{" "}
+                <strong>Massa</strong>.
+                <br />
+                <br />
+                <strong>Saturno</strong> nosso menu reforçado de{" "}
+                <strong>Strogonoff</strong> de frango.
+                <br />
+                <br />
+                <strong>Terra</strong> nosso menu queridinho e especial de{" "}
+                <strong>Feijoada</strong>.
+                <br />
+                <br />
+                Acompanhados das entradinhas, salgados fritos na hora, saladinha
+                e é claro nossa grande variedade de bolos deliciosos e docinhos.
+                As bebidas não alcoólicas também ficam por nossa conta,
+                refrigerantes 1ª linha, sucos e água.
+                <br />
+                Tudo isso incluso e a vontade na sua festa, para deixar todos os
+                seus convidados felizes.
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
@@ -170,14 +191,15 @@ export function Home() {
                 <img src={espacoPrivativo} alt="" />
               </Img>
 
-              <h3>Espaços</h3>
+              <h3>Espaço</h3>
 
               <p>
-                Oferecemos um espaço temático encantador, com variedade de
-                atrações e brinquedos, uma equipe treinada e motivada, além da
-                estrutura com ar condicionados, lindas decorações, iluminação e
-                entrada especial para o parabéns, proporcionando todo o conforto
-                e organização necessários para que sua festa seja incrivel.
+                Espaço totalmente temático, ótimo para tirar aquelas fotos
+                incríveis para as redes socias, comporta até 70 pessoas.
+                Contamos com uma equipe completa, motivada e treinada, além da
+                estrutura com ar condicionados, muitos brinquedos,
+                proporcionando todo conforto e organização necessárias para que
+                sua festa seja incrível.
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
@@ -188,13 +210,13 @@ export function Home() {
                 <img src={pacotesEspeciais} alt="" />
               </Img>
 
-              <h3>Pacotes Especiais</h3>
+              <h3>Decorações</h3>
 
               <p>
-                Confira nossos pacotes personalizados, que incluem tudo o que
-                você precisa para uma festa completa, desde a decoração até o
-                buffet. Temos opções para diferentes tamanhos de festas e
-                orçamentos.
+                Contamos com um espaço determinado para a montagem da decoração,
+                temos inúmeros temas disponíveis e a montagem da decoração está
+                inclusa em seu pacote. Na hora dos parabéns fazemos uma entrada
+                muito especial com música, iluminação e máquina de fumaça.
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
