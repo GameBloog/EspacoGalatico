@@ -24,7 +24,7 @@ import {
   JustForStyle,
   WhatIsLastPage,
   BotaoFixo,
-  // SingleWords,
+  SingleWords,
 } from "./styles.ts"
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
@@ -160,6 +160,9 @@ export function Home() {
               <p>
                 Venha conhecer a grande variedade de comidinhas deliciosas que
                 estão inclusas dentro dos nossos menus, são eles:
+                {/* 
+                  //TEXTO COMENTADO POIS ESTA QUEBRANDO O DESKTOP, DA UMA OLHADA
+                
                 <br />
                 <br />
                 <strong>Marte</strong> nosso menu tradicionalíssimo de{" "}
@@ -180,7 +183,7 @@ export function Home() {
                 refrigerantes 1ª linha, sucos e água.
                 <br />
                 Tudo isso incluso e a vontade na sua festa, para deixar todos os
-                seus convidados felizes.
+                seus convidados felizes. */}
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
@@ -203,6 +206,15 @@ export function Home() {
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
+
+          {/*
+          //DIV DAS FRASES SOLTAS
+
+          <SingleWords>
+            <h3>
+              Temos opções para diferentes tamanhos de festas e orçamentos.{" "}
+            </h3>
+          </SingleWords> */}
 
           <ImageWithTextContainer>
             <ImageWithText>

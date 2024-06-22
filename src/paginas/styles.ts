@@ -186,18 +186,27 @@ export const CallToAction = styled.div`
   }
 `
 export const SingleWords = styled.div`
-  display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
   gap: 10px;
+  text-align: center;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
 
   h3 {
     font-size: 20px;
     line-height: 20px;
     font-family: "Galada", cursive;
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
     color: #f87b07;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    max-width: 200px;
+    max-height: 100px;
+    margin-bottom: 2rem;
   }
 `
 
