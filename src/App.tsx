@@ -3,7 +3,7 @@ import Rotas from "./Routes.jsx"
 import { ThemeProvider } from "styled-components"
 import { defaultTheme } from "./styles/themes/default.js"
 import { GlobalStyle } from "./styles/global.js"
-// import "../global.css"
+
 
 function App() {
   return (

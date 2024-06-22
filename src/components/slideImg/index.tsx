@@ -1,58 +1,118 @@
-// // Carousel.tsx
-// import React, { useState } from "react"
-// import Slider from "react-slick"
-// import "slick-carousel/slick/slick.css"
-// import "slick-carousel/slick/slick-theme.css"
-// import { Modal } from "../modal" // Verifique se o caminho para o Modal está correto
+import { useState, useRef } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/css"
+import "swiper/css"
+import SwiperCore from "swiper"
+import Modal from "react-modal"
+import mesaDeJogos from "../../assets/imagens/Mesas-de-jogos.jpg"
+import mesaRefeitorio from "../../assets/imagens/Mesas-refeitorio.jpg"
+import espacoPrivativo from "../../assets/imagens/Espaços-privativos.jpg"
+import pacotesEspeciais from "../../assets/imagens/pacotes-especiais.jpg"
+import { Images, CloseButton, ImageModal } from "./styles"
+import { Autoplay, Pagination } from "swiper/modules"
 
-// interface CarouselProps {
-//   images: string[]
-// }
+// Instale os módulos necessários no Swiper
+SwiperCore.use([Autoplay, Pagination])
 
-// export const Carousel: React.FC<CarouselProps> = ({ images }) => {
-//   const [selectedImage, setSelectedImage] = useState<string | null>(null)
+Modal.setAppElement("#root")
 
-//   const openModal = (imageUrl: string) => {
-//     setSelectedImage(imageUrl)
-//   }
+export function Carousel() {
+  const data = [
+    { id: "1", image: mesaDeJogos },
+    { id: "2", image: mesaRefeitorio },
+    { id: "3", image: espacoPrivativo },
+    { id: "4", image: pacotesEspeciais },
+  ]
 
-//   const closeModal = () => {
-//     setSelectedImage(null)
-//   }
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+  const swiperRef = useRef<SwiperCore | null>(null)
 
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 2,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     speed: 2000,
-//     autoplaySpeed: 2000,
-//     cssEase: "linear",
-//     pauseOnHover: false, // Adicionado para evitar pausas ao passar o mouse
-//     pauseOnFocus: false,
-//     arrows: false,
-//   }
+  const openModal = (image: string) => {
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.stop()
+    }
+    setSelectedImage(image)
+    setModalIsOpen(true)
+  }
 
-//   return (
-//     <div>
-//       <Slider {...settings}>
-//         {images.map((imageUrl, index) => (
-//           <div key={index} onClick={() => openModal(imageUrl)}>
-//             <img
-//               src={imageUrl}
-//               alt={`Image ${index}`}
-//               style={{ width: "100%", cursor: "pointer" }}
-//             />
-//           </div>
-//         ))}
-//       </Slider>
+  const closeModal = () => {
+    setModalIsOpen(false)
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.start()
+    }
+    setSelectedImage(null)
+  }
 
-//       {selectedImage && (
-//         <Modal imageUrl={selectedImage} closeModal={closeModal} />
-//       )}
-//     </div>
-//   )
-// }
+  return (
+    <div>
+      <Swiper
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper
+        }}
+        slidesPerView={1}
+        pagination={{
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+      >
+        {data.map((item) => (
+          <SwiperSlide key={item.id}>
+            <Images onClick={() => openModal(item.image)}>
+              <img
+                src={item.image}
+                alt="slider"
+                style={{ cursor: "pointer" }}
+              />
+            </Images>
+          </SwiperSlide>
+        ))}
+        <div className="swiper-pagination"></div>
+      </Swiper>
 
-//Testar swiperjs
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Image Modal"
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
+            zIndex: 1000,
+          },
+          content: {
+            background: "#004d36",
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            maxWidth: "80%",
+            maxHeight: "80%",
+            width: "45rem",
+            height: "auto",
+            zIndex: 1001,
+          },
+        }}
+      >
+        <CloseButton onClick={closeModal}>X</CloseButton>
+        {selectedImage && (
+          <ImageModal>
+            <img
+              src={selectedImage}
+              alt="Selected"
+              style={{
+                maxWidth: "40rem",
+              }}
+            />
+          </ImageModal>
+        )}
+      </Modal>
+    </div>
+  )
+}

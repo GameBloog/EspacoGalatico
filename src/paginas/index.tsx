@@ -24,7 +24,6 @@ import {
   JustForStyle,
   WhatIsLastPage,
   BotaoFixo,
-  SingleWords,
 } from "./styles.ts"
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
@@ -37,6 +36,7 @@ import facebook from "../assets/imagens/Facebook.png"
 import whatzapp from "../assets/imagens/Whatapp.jpg"
 import logo from "../assets/imagens/logo.jpg"
 import whatsappcanto from "../assets/imagens/wppdecantoV2.png"
+import { Carousel } from "../components/slideImg/index.tsx"
 //import whatsappcanto from "../assets/imagens/wppdecanto.png"
 //import { Carousel } from "../components/slideImg/index.tsx"
 
@@ -289,6 +289,10 @@ export function Home() {
           <img src={whatsappcanto} alt="Botão para whatsapp" />
         </BotaoFixo>
       </main>
+
+      <div>
+        <Carousel />
+      </div>
 
       {/* <div className="App">
         <h1>Image Carousel</h1>
