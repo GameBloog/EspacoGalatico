@@ -1,9 +1,7 @@
-import { Button } from "../Button";
+import { Button } from "./styles"
+import whatsappcanto from "../../assets/imagens/apps/wppdecantoV2.png"
 
-import whatsappcanto from "../../assets/imagens/wppdecantoV2.png"
-
-
-export function ButtonFixed(){
+export function ButtonFixed() {
   return (
     <Button
       href="https://wa.me/5511960767865/?text=urlencodedtex"

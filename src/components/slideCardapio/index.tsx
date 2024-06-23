@@ -3,10 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import SwiperCore from "swiper"
 import Modal from "react-modal"
-import mesaDeJogos from "../../assets/imagens/Mesas-de-jogos.jpg"
-import mesaRefeitorio from "../../assets/imagens/Mesas-refeitorio.jpg"
-import espacoPrivativo from "../../assets/imagens/Espaços-privativos.jpg"
-import pacotesEspeciais from "../../assets/imagens/pacotes-especiais.jpg"
+import mesasRefeitorio from "../../assets/imagens/Cardapio/visao-ampla.jpg"
+import camarinCardapio from "../../assets/imagens/Cardapio/Camarin.jpg"
+import espacoCardapio from "../../assets/imagens/Cardapio/Espaco2.jpg"
 import { SlideWithText } from "./SlideWithText"
 import { Autoplay, Pagination } from "swiper/modules"
 import { Images } from "./styles"
@@ -20,28 +19,28 @@ export function CarouselwithText() {
   const data = [
     {
       id: "1",
-      image: mesaDeJogos,
+      image: mesasRefeitorio,
       title: "Mesa de Jogos",
       description:
         "Contamos com uma vasta seleção de brinquedos, incluindo labamba, brinquedão com enorme piscina de bolinhas, cama elástica, multijogos, tombo legal, air game, space game e muito mais.",
     },
     {
       id: "2",
-      image: mesaRefeitorio,
+      image: camarinCardapio,
       title: "Mesa de Refeitório",
       description:
         "Nossa cozinha prepara um cardápio diversificado e saudável, com opções que vão de feijoada, strogonoff a massas, com salgadinhos deliciosos e doces irresistíveis. Tudo pensado para agradar crianças e adultos.",
     },
     {
       id: "3",
-      image: espacoPrivativo,
+      image: espacoCardapio,
       title: "Espaço Privativo",
       description:
         "Oferecemos um espaço temático encantador, com variedade de atrações e brinquedos, uma equipe treinada e motivada, além da estrutura com ar condicionados, lindas decorações, iluminação e entrada especial para o parabéns.",
     },
     {
       id: "4",
-      image: pacotesEspeciais,
+      image: espacoCardapio,
       title: "Pacotes Especiais",
       description:
         "Confira nossos pacotes personalizados, que incluem tudo o que você precisa para uma festa completa, desde a decoração até o buffet. Temos opções para diferentes tamanhos de festas e orçamentos.",

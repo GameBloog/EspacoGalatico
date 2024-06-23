@@ -10,7 +10,7 @@ import {
   ImgEspacofestas,
 } from "./styles.ts"
 
-import espacoFestas from "../assets/imagens/espaço-de-festas.jpg"
+import espacoFestas from "../assets/imagens/espaco/espaço-de-festas.jpg"
 
 import avaliacao1 from "../assets/imagens/clientOpnion/Imagem1.png"
 import avaliacao2 from "../assets/imagens/clientOpnion/Imagem2.png"
@@ -19,7 +19,7 @@ import avaliacao4 from "../assets/imagens/clientOpnion/Imagem4.png"
 import avaliacao5 from "../assets/imagens/clientOpnion/Imagem5.png"
 
 import mesaDeJogos from "../assets/imagens/games/Mesas-de-jogos.jpg"
-import pacotesEspeciais from "../assets/games/imagens/pacotes-especiais.jpg"
+import pacotesEspeciais from "../assets/imagens/games/pacotes-especiais.jpg"
 import brinquedos from "../assets/imagens/games/Brinquedos.jpg"
 import brinquedos2 from "../assets/imagens/games/Brinquedos2.jpg"
 import brinquedos3 from "../assets/imagens/games/Brinquedos3.jpg"
@@ -152,7 +152,6 @@ export function Home() {
           />
 
           <SingleWords text="Confira nossos pacotes e garanta sua festa completa." />
-          <h3>Confira nossos pacotes e garanta sua festa completa.</h3>
         </DesktopImageText>
 
         <MidleDiv>

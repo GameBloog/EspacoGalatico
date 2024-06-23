@@ -1,8 +1,8 @@
 import { ButtonImg, ButtonImgDiv, ImgLogo } from "./styles"
 
-import instagram from "../../assets/imagens/instagram.png"
-import facebook from "../../assets/imagens/Facebook.png"
-import whatzapp from "../../assets/imagens/Whatapp.jpg"
+import instagram from "../../assets/imagens/apps/instagram.png"
+import facebook from "../../assets/imagens/apps/Facebook.png"
+import whatzapp from "../../assets/imagens/apps/Whatapp.jpg"
 
 export function ImgLogos() {
   return (
