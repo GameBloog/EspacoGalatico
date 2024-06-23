@@ -39,10 +39,7 @@ import logo from "../assets/imagens/logo.jpg"
 import whatsappcanto from "../assets/imagens/wppdecantoV2.png"
 import { Carousel } from "../components/slideImg/index.tsx"
 import { CarouselwithText } from "../components/slideCardapio/index.tsx"
-//import whatsappcanto from "../assets/imagens/wppdecanto.png"
-//import { Carousel } from "../components/slideImg/index.tsx"
 
-///const images = [logo, whatsappcanto, whatsappcanto]
 
 const images = [
   { id: "1", image: mesaDeJogos },
