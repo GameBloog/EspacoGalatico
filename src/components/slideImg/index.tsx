@@ -12,7 +12,7 @@ SwiperCore.use([Autoplay, Pagination])
 
 Modal.setAppElement("#root")
 
-interface ImageData {
+export interface ImageData {
   id: string
   image: string
 }
