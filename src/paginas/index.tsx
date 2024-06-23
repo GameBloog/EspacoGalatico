@@ -133,6 +133,7 @@ export function Home() {
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
+
           <ImageWithTextContainer>
             <ImageWithText>
               <Img>
@@ -170,7 +171,9 @@ export function Home() {
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
+
           <CarouselwithText/>
+
           <ImageWithTextContainer>
             <ImageWithText>
               <Img>
@@ -189,6 +192,7 @@ export function Home() {
               </p>
             </ImageWithText>
           </ImageWithTextContainer>
+
           {/*
           //DIV DAS FRASES SOLTAS
 

@@ -1,4 +1,5 @@
 import React from "react"
+import { TitleText,DescriptionText, } from "./styles"
 
 interface SlideWithTextProps {
   image: string
@@ -15,8 +16,8 @@ export const SlideWithText: React.FC<SlideWithTextProps> = ({
     <div>
       <img src={image} alt={title} style={{ width: "100%" }} />
       <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <TitleText>{title}</TitleText>
+        <DescriptionText>{description}</DescriptionText>
       </div>
     </div>
   )
