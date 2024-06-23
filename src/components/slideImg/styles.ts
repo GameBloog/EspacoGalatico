@@ -4,15 +4,21 @@ export const Images = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
-    width: 30rem;
+    width: 90vw;
+    height: auto;
+
+    @media (min-width: 1025px) {
+      max-width: 30rem;
+    }
   }
 `
 
 export const CloseButton = styled.button`
   position: absolute;
-  top: 5px;
-  right: 3px;
+  top: 10px;
+  right: 10px;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -25,7 +31,30 @@ export const ImageModal = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
-    width: 30rem;
+    width: 90vw;
+    height: auto;
+
+    @media (min-width: 1025px) {
+      max-width: 30rem;
+    }
+  }
+`
+
+export const ModalContent = styled.div`
+  background: #004d36;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: auto;
+  z-index: 1001;
+
+  @media (min-width: 1025px) {
+    width: 45rem;
   }
 `

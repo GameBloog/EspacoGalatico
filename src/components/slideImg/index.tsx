@@ -4,10 +4,6 @@ import "swiper/css"
 import "swiper/css"
 import SwiperCore from "swiper"
 import Modal from "react-modal"
-import mesaDeJogos from "../../assets/imagens/Mesas-de-jogos.jpg"
-import mesaRefeitorio from "../../assets/imagens/Mesas-refeitorio.jpg"
-import espacoPrivativo from "../../assets/imagens/Espaços-privativos.jpg"
-import pacotesEspeciais from "../../assets/imagens/pacotes-especiais.jpg"
 import { Images, CloseButton, ImageModal } from "./styles"
 import { Autoplay, Pagination } from "swiper/modules"
 
@@ -16,14 +12,16 @@ SwiperCore.use([Autoplay, Pagination])
 
 Modal.setAppElement("#root")
 
-export function Carousel() {
-  const data = [
-    { id: "1", image: mesaDeJogos },
-    { id: "2", image: mesaRefeitorio },
-    { id: "3", image: espacoPrivativo },
-    { id: "4", image: pacotesEspeciais },
-  ]
+interface ImageData {
+  id: string
+  image: string
+}
 
+interface CarouselProps {
+  images: ImageData[]
+}
+
+export function Carousel({ images }: CarouselProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   const swiperRef = useRef<SwiperCore | null>(null)
@@ -61,13 +59,13 @@ export function Carousel() {
           disableOnInteraction: false,
         }}
       >
-        {data.map((item) => (
+        {images.map((item: ImageData) => (
           <SwiperSlide key={item.id}>
             <Images onClick={() => openModal(item.image)}>
               <img
                 src={item.image}
                 alt="slider"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", objectFit: "cover" }}
               />
             </Images>
           </SwiperSlide>
@@ -107,7 +105,8 @@ export function Carousel() {
               src={selectedImage}
               alt="Selected"
               style={{
-                maxWidth: "40rem",
+                maxWidth: "100%",
+                height: "auto",
               }}
             />
           </ImageModal>

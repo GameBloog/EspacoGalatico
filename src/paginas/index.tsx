@@ -5,15 +5,12 @@ import {
   Button,
   WhatIs,
   Container,
-  Img,
   ImgLogos,
   RoudendImg,
-  ImageWithText,
   DesktopImageText,
   ImgEspacofestas,
   SectionImg,
   EspacoFestas,
-  ImageWithTextContainer,
   Reserve,
   MobileLastPage,
   DesktopLastPage,
@@ -24,6 +21,10 @@ import {
   JustForStyle,
   WhatIsLastPage,
   BotaoFixo,
+  ImageWithTextSlide,
+  ImageWithTextContainerSlide,
+  TextStyle,
+  SingleWords,
 } from "./styles.ts"
 
 import mesaDeJogos from "../assets/imagens/Mesas-de-jogos.jpg"
@@ -42,6 +43,13 @@ import { CarouselwithText } from "../components/slideCardapio/index.tsx"
 //import { Carousel } from "../components/slideImg/index.tsx"
 
 ///const images = [logo, whatsappcanto, whatsappcanto]
+
+const images = [
+  { id: "1", image: mesaDeJogos },
+  { id: "2", image: mesaRefeitorio },
+  { id: "3", image: espacoPrivativo },
+  { id: "4", image: pacotesEspeciais },
+]
 
 export function Home() {
   return (
@@ -115,108 +123,107 @@ export function Home() {
         </Section>
 
         <DesktopImageText>
-          <ImageWithTextContainer>
-            <ImageWithText>
-              <Img>
-                <img src={mesaDeJogos} alt="Mesas de jogos" />
-              </Img>
+          <ImageWithTextContainerSlide>
+            <ImageWithTextSlide>
+              <Carousel images={images} />
+              <TextStyle>
+                <h3>Brinquedos e Atividades</h3>
 
-              <h3>Brinquedos e Atividades</h3>
+                <p>
+                  Contamos com uma vasta seleção de brinquedos, incluindo
+                  labamba, brinquedão com enorme piscina de bolinhas, cama
+                  elástica, multijogos, tombo legal, air game, space game e
+                  muito mais. Além disso, nossas recreadoras promovem jogos e
+                  atividades interativas e criativas para manter a criançada
+                  sempre entretida.
+                </p>
+              </TextStyle>
+            </ImageWithTextSlide>
+          </ImageWithTextContainerSlide>
 
-              <p>
-                Contamos com uma vasta seleção de brinquedos, incluindo labamba,
-                brinquedão com enorme piscina de bolinhas, cama elástica,
-                multijogos, tombo legal, air game, space game e muito mais. Além
-                disso, nossas recreadoras promovem jogos e atividades
-                interativas e criativas para manter a criançada sempre
-                entretida.
-              </p>
-            </ImageWithText>
-          </ImageWithTextContainer>
-
-          <ImageWithTextContainer>
-            <ImageWithText>
-              <Img>
-                <img
-                  src={mesaRefeitorio}
-                  alt="Mesas de um refeitorio infantil"
-                />
-              </Img>
-
-              <h3>Cardápio Variado</h3>
-              <p>
-                Venha conhecer a grande variedade de comidinhas deliciosas que
-                estão inclusas dentro dos nossos menus, são eles:
-                <br />
-                <br />
-                <strong>Marte</strong> nosso menu tradicionalíssimo de
-                <strong>Massa</strong>.
-                <br />
-                <br />
-                <strong>Saturno</strong> nosso menu reforçado de{" "}
-                <strong>Strogonoff</strong> de frango.
-                <br />
-                <br />
-                <strong>Terra</strong> nosso menu queridinho e especial de{" "}
-                <strong>Feijoada</strong>.
-                <br />
-                <br />
-                Acompanhados das entradinhas, salgados fritos na hora, saladinha
-                e é claro nossa grande variedade de bolos deliciosos e docinhos.
-                As bebidas não alcoólicas também ficam por nossa conta,
-                refrigerantes 1ª linha, sucos e água.
-                <br />
-                Tudo isso incluso e a vontade na sua festa, para deixar todos os
-                seus convidados felizes.
-              </p>
-            </ImageWithText>
-          </ImageWithTextContainer>
-
-          <CarouselwithText/>
-
-          <ImageWithTextContainer>
-            <ImageWithText>
-              <Img>
-                <img src={espacoPrivativo} alt="" />
-              </Img>
-
-              <h3>Espaço</h3>
-
-              <p>
-                Espaço totalmente temático, ótimo para tirar aquelas fotos
-                incríveis para as redes socias, comporta até 70 pessoas.
-                Contamos com uma equipe completa, motivada e treinada, além da
-                estrutura com ar condicionados, muitos brinquedos,
-                proporcionando todo conforto e organização necessárias para que
-                sua festa seja incrível.
-              </p>
-            </ImageWithText>
-          </ImageWithTextContainer>
-
-          {/*
-          //DIV DAS FRASES SOLTAS
+          <ImageWithTextContainerSlide>
+            <ImageWithTextSlide>
+              <Carousel images={images} />
+              <TextStyle>
+                <h3>Cardápio Variado</h3>
+                <p>
+                  Venha conhecer a grande variedade de comidinhas deliciosas que
+                  estão inclusas dentro dos nossos menus, são eles:
+                  <br />
+                  <br />
+                  <strong>Marte</strong> nosso menu tradicionalíssimo de
+                  <strong> Massa</strong>.
+                  <br />
+                  <br />
+                  <strong>Saturno</strong> nosso menu reforçado de{" "}
+                  <strong>Strogonoff</strong> de frango.
+                  <br />
+                  <br />
+                  <strong>Terra</strong> nosso menu queridinho e especial de{" "}
+                  <strong>Feijoada</strong>.
+                  <br />
+                  <br />
+                  Acompanhados das entradinhas, salgados fritos na hora,
+                  saladinha e é claro nossa grande variedade de bolos deliciosos
+                  e docinhos. As bebidas não alcoólicas também ficam por nossa
+                  conta, refrigerantes 1ª linha, sucos e água.
+                  <br />
+                  Tudo isso incluso e a vontade na sua festa, para deixar todos
+                  os seus convidados felizes.
+                </p>
+              </TextStyle>
+              <button>
+                <strong>Acesse nosso cardápio</strong>
+              </button>
+            </ImageWithTextSlide>
+          </ImageWithTextContainerSlide>
 
           <SingleWords>
             <h3>
               Temos opções para diferentes tamanhos de festas e orçamentos.{" "}
             </h3>
-          </SingleWords> */}
-          <ImageWithTextContainer>
-            <ImageWithText>
-              <Img>
-                <img src={pacotesEspeciais} alt="" />
-              </Img>
+          </SingleWords>
 
-              <h3>Decorações</h3>
+          <CarouselwithText />
 
-              <p>
-                Contamos com um espaço determinado para a montagem da decoração,
-                temos inúmeros temas disponíveis e a montagem da decoração está
-                inclusa em seu pacote. Na hora dos parabéns fazemos uma entrada
-                muito especial com música, iluminação e máquina de fumaça.
-              </p>
-            </ImageWithText>
-          </ImageWithTextContainer>
+          <ImageWithTextContainerSlide>
+            <ImageWithTextSlide>
+              <Carousel images={images} />
+
+              <TextStyle>
+                <h3>Espaço</h3>
+
+                <p>
+                  Espaço totalmente temático, ótimo para tirar aquelas fotos
+                  incríveis para as redes socias, comporta até 70 pessoas.
+                  Contamos com uma equipe completa, motivada e treinada, além da
+                  estrutura com ar condicionados, muitos brinquedos,
+                  proporcionando todo conforto e organização necessárias para
+                  que sua festa seja incrível.
+                </p>
+              </TextStyle>
+            </ImageWithTextSlide>
+          </ImageWithTextContainerSlide>
+
+          <ImageWithTextContainerSlide>
+            <ImageWithTextSlide>
+              <Carousel images={images} />
+              <TextStyle>
+                <h3>Decorações</h3>
+
+                <p>
+                  Contamos com um espaço determinado para a montagem da
+                  decoração, temos inúmeros temas disponíveis e a montagem da
+                  decoração está inclusa em seu pacote. Na hora dos parabéns
+                  fazemos uma entrada muito especial com música, iluminação e
+                  máquina de fumaça.
+                </p>
+              </TextStyle>
+            </ImageWithTextSlide>
+          </ImageWithTextContainerSlide>
+          <SingleWords>
+            <h3>Confira nossos pacotes e garanta sua festa completa.</h3>
+          </SingleWords>
         </DesktopImageText>
 
         <MidleDiv>
@@ -242,12 +249,7 @@ export function Home() {
           <Reserve>
             <h3>Oque os nossos clientes dizem ..</h3>
 
-            <p>
-              "O Buffet Infantil Alegria transformou a festa do meu filho em um
-              dia mágico! A equipe foi incrível em transformar nossas ideias em
-              realidade. A decoração, atividades e comida foram impecáveis.
-              Obrigada por tornar o aniversário do meu filho inesquecível!"
-            </p>
+            <Carousel images={images} />
           </Reserve>
         </MidleDiv>
 
@@ -274,15 +276,6 @@ export function Home() {
           <img src={whatsappcanto} alt="Botão para whatsapp" />
         </BotaoFixo>
       </main>
-
-      <div>
-        <Carousel />
-      </div>
-
-      {/* <div className="App">
-        <h1>Image Carousel</h1>
-        <Carousel images={images} />
-      </div> */}
 
       <Footer>
         <p>
