@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
 
   :focus{
@@ -14,7 +15,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background: linear-gradient(180deg, #92d050 0%, #004d36 100%);
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    max-width: 100vw;
   }
 
   body, input, textarea, button{
