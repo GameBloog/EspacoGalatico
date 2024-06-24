@@ -7,9 +7,10 @@ export const SingleWord = styled.div`
   gap: 10px;
   text-align: center;
   background-color: white;
-  margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
+  margin-bottom: 4rem;
+  max-width: 250px;
 
   h3 {
     font-size: 20px;

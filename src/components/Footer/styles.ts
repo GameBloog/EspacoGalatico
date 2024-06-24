@@ -54,6 +54,7 @@ export const EndPage = styled.footer`
     }
     p {
       margin-top: 0;
+      
     }
 
     p,

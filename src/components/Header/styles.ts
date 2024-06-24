@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const WhatIs = styled.div`
   max-width: 300px;
   margin-left: 1rem;
+  padding: 0.8rem;
 
   h3 {
     max-width: 312px;
@@ -23,6 +24,7 @@ export const WhatIs = styled.div`
   @media (min-width: 768px) {
     max-width: 600px;
     margin-left: 0;
+    padding: none;
 
     h1 {
       font-size: 36px;

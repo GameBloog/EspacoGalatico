@@ -30,7 +30,7 @@ export const ImageModal = styled.div`
   justify-content: center;
 
   img {
-    width: 90vw;
+    max-width: 90vw;
     height: auto;
 
     @media (min-width: 1025px) {

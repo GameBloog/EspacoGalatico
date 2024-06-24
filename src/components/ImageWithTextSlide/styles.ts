@@ -1,7 +1,11 @@
 import styled from "styled-components"
 
 export const ImageWithTextContainerSlide = styled.div`
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 5rem;
+  }
 `
 
 export const ImageWithTextSlides = styled.div`
@@ -49,7 +53,7 @@ export const ImageWithTextSlides = styled.div`
     //margin: 0 auto;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     max-width: none;
   }
 `

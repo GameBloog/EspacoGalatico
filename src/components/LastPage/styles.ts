@@ -15,11 +15,8 @@ export const MobileLastPage = styled.div`
 `
 
 export const DesktopLastPage = styled.div`
-  margin-bottom: 1.5rem;
-
   h3 {
     text-align: center;
-    margin-bottom: 1.2rem;
     color: white;
     text-align: start;
     font-size: larger;
@@ -48,7 +45,7 @@ export const DesktopLastPage = styled.div`
 `
 
 export const JustForStyle = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 `
 
 export const WhatIsLastPage = styled.div`

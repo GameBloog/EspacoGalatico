@@ -5,6 +5,7 @@ import "swiper/css"
 import { Autoplay, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { CloseButton, ImageModal, Images } from "./styles"
+import { XCircle } from "phosphor-react"
 
 // Instale os módulos necessários no Swiper
 SwiperCore.use([Autoplay, Pagination])
@@ -55,7 +56,7 @@ export function Carousel({ images }: CarouselProps) {
           dynamicBullets: true,
         }}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
       >
@@ -99,7 +100,7 @@ export function Carousel({ images }: CarouselProps) {
           },
         }}
       >
-        <CloseButton onClick={closeModal}>X</CloseButton>
+        <CloseButton onClick={closeModal}><XCircle size={32} color="black"/></CloseButton>
         {selectedImage && (
           <ImageModal>
             <img

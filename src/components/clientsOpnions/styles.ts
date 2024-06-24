@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Reserve = styled.div`
   gap: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 7rem;
   margin-bottom: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;

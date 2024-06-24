@@ -16,7 +16,7 @@ export const ImageWithTextSlides = styled.div`
     //margin: 0 auto;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     max-width: none;
   }
 
@@ -39,18 +39,27 @@ export const ImageWithTextSlides = styled.div`
 
     button {
       margin-top: 1rem;
-      width: 240px;
+      max-width: 16rem;
       border-radius: 10px;
       border: none;
-      padding: 0.2rem;
+      padding: 0.3rem;
       background: ${(props) => props.theme["green-500"]};
       color: white;
       transition: background 0.3s ease, transform 0.3s ease;
+
+      @media (min-width: 768px) {
+        width: 20rem;
+        padding: 0.5rem;
+      }
 
       &:hover {
         background: ${(props) => props.theme["green-700"]};
         cursor: pointer;
         transform: scale(1.05);
+      }
+
+      strong {
+        font-size: 1rem;
       }
     }
   }

@@ -28,12 +28,12 @@ import pacotesEspeciais from "../assets/imagens/games/pacotes-especiais.jpg"
 //Aguardar novas imgens
 import camarinCardapio from "../assets/imagens/Cardapio/Camarin.jpg"
 import espacoCardapio from "../assets/imagens/Cardapio/Espaco2.jpg"
-import mesasRefeitorio from "../assets/imagens/Cardapio/visao-ampla.jpg"
+import mesasRefeitorio from "../assets/imagens/Cardapio/visaoAmpla.jpg"
 
 import camarin from "../assets/imagens/espaco/Camarin.jpg"
 import espaco2 from "../assets/imagens/espaco/Espaco2.jpg"
 import espacoDeFestas from "../assets/imagens/espaco/espaço-de-festas.jpg"
-import visaoAmpla from "../assets/imagens/espaco/visao-ampla.jpg"
+import visaoAmpla from "../assets/imagens/espaco/visaoAmpla.jpg"
 
 import decoracao from "../assets/imagens/decoration/Decoracao.jpg"
 import fachada from "../assets/imagens/decoration/fachada.jpg"
