@@ -9,6 +9,10 @@ export const ImageWithTextSlides = styled.div`
   padding: 2rem;
   border-radius: 2rem;
 
+  @media (min-width: 1360px) {
+    width: 50%;
+  }
+
   h3 {
     margin: 0;
     color: white;

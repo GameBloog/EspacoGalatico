@@ -1,11 +1,10 @@
-import { useState, useRef } from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import "swiper/css"
-import "swiper/css"
-import SwiperCore from "swiper"
+import { useRef, useState } from "react"
 import Modal from "react-modal"
-import { Images, CloseButton, ImageModal } from "./styles"
+import SwiperCore from "swiper"
+import "swiper/css"
 import { Autoplay, Pagination } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { CloseButton, ImageModal, Images } from "./styles"
 
 // Instale os módulos necessários no Swiper
 SwiperCore.use([Autoplay, Pagination])
@@ -78,6 +77,7 @@ export function Carousel({ images }: CarouselProps) {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Image Modal"
+        id="modal"
         style={{
           overlay: {
             backgroundColor: "rgba(0, 0, 0, 0.75)",

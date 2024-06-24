@@ -1,13 +1,13 @@
 import {
   Container,
-  Section,
-  MobileHomePage,
   DesktopHomePage,
   DesktopImageText,
-  MidleDiv,
-  SectionImg,
   EspacoFestas,
   ImgEspacofestas,
+  MidleDiv,
+  MobileHomePage,
+  Section,
+  SectionImg,
 } from "./styles.ts"
 
 import espacoFestas from "../assets/imagens/espaco/espaço-de-festas.jpg"
@@ -18,17 +18,17 @@ import avaliacao3 from "../assets/imagens/clientOpnion/Imagem3.png"
 import avaliacao4 from "../assets/imagens/clientOpnion/Imagem4.png"
 import avaliacao5 from "../assets/imagens/clientOpnion/Imagem5.png"
 
-import mesaDeJogos from "../assets/imagens/games/Mesas-de-jogos.jpg"
-import pacotesEspeciais from "../assets/imagens/games/pacotes-especiais.jpg"
 import brinquedos from "../assets/imagens/games/Brinquedos.jpg"
 import brinquedos2 from "../assets/imagens/games/Brinquedos2.jpg"
 import brinquedos3 from "../assets/imagens/games/Brinquedos3.jpg"
 import brinquedos4 from "../assets/imagens/games/Brinquedos4.jpg"
+import mesaDeJogos from "../assets/imagens/games/Mesas-de-jogos.jpg"
+import pacotesEspeciais from "../assets/imagens/games/pacotes-especiais.jpg"
 
 //Aguardar novas imgens
-import mesasRefeitorio from "../assets/imagens/Cardapio/visao-ampla.jpg"
 import camarinCardapio from "../assets/imagens/Cardapio/Camarin.jpg"
 import espacoCardapio from "../assets/imagens/Cardapio/Espaco2.jpg"
+import mesasRefeitorio from "../assets/imagens/Cardapio/visao-ampla.jpg"
 
 import camarin from "../assets/imagens/espaco/Camarin.jpg"
 import espaco2 from "../assets/imagens/espaco/Espaco2.jpg"
@@ -39,17 +39,17 @@ import decoracao from "../assets/imagens/decoration/Decoracao.jpg"
 import fachada from "../assets/imagens/decoration/fachada.jpg"
 import mesas from "../assets/imagens/decoration/Mesas-refeitorio.jpg"
 
-import { CarouselwithText } from "../components/slideCardapio/index.tsx"
-import { Header } from "../components/Header/index.tsx"
 import { Button } from "../components/Button/index.tsx"
-import { ImgLogos } from "../components/LogoImgs/index.tsx"
-import { ImageWithTextSlide } from "../components/ImageWithTextSlide/index.tsx"
-import { Cardapio } from "../components/Cardapio/index.tsx"
-import { SingleWords } from "../components/SingleWords/index.tsx"
-import { ClientsOpnion } from "../components/clientsOpnions/index.tsx"
-import { LastPage } from "../components/LastPage/index.tsx"
 import { ButtonFixed } from "../components/ButtonFixed/index.tsx"
+import { Cardapio } from "../components/Cardapio/index.tsx"
+import { ClientsOpnion } from "../components/clientsOpnions/index.tsx"
 import { Footer } from "../components/Footer/index.tsx"
+import { Header } from "../components/Header/index.tsx"
+import { ImageWithTextSlide } from "../components/ImageWithTextSlide/index.tsx"
+import { LastPage } from "../components/LastPage/index.tsx"
+import { ImgLogos } from "../components/LogoImgs/index.tsx"
+import { SingleWords } from "../components/SingleWords/index.tsx"
+import { CarouselwithText } from "../components/slideCardapio/index.tsx"
 
 const games = [
   { id: "1", image: mesaDeJogos },
