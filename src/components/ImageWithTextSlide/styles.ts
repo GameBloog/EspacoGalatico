@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const ImageWithTextContainerSlide = styled.div``
+export const ImageWithTextContainerSlide = styled.div`
+margin-bottom: 4rem;
+`
 
 export const ImageWithTextSlides = styled.div`
   background-color: ${(props) => props.theme["orange-500"]};
-  /* max-width: 250px; */
+  max-width: 250px;
   margin: 0 auto 3rem auto;
   padding: 2rem;
   border-radius: 2rem;
-
-  width: 50%;
 
   h3 {
     margin: 0;
@@ -19,7 +19,7 @@ export const ImageWithTextSlides = styled.div`
   }
 
   p {
-    max-width: 200px;
+    max-width: 800px;
     margin: 0;
   }
 
@@ -42,6 +42,15 @@ export const ImageWithTextSlides = styled.div`
       cursor: pointer;
       transform: scale(1.05); /* Leve zoom */
     }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    //margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    max-width: none;
   }
 `
 

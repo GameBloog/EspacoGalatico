@@ -42,9 +42,11 @@ export function Cardapio({ images }: Props) {
             seus convidados felizes.
           </p>
         </TextStyle>
-        <button>
-          <strong>Acesse nosso cardápio</strong>
-        </button>
+        <div>
+          <button>
+            <strong>Acesse nosso cardápio</strong>
+          </button>
+        </div>
       </ImageWithTextSlides>
     </ImageWithTextContainerSlide>
   )

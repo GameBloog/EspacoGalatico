@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const SingleWord = styled.div`
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -18,9 +19,11 @@ export const SingleWord = styled.div`
   }
 
   @media (min-width: 768px) {
-    display: flex;
-    max-width: 200px;
-    max-height: 100px;
-    margin-bottom: 2rem;
+    max-width: 400px;
+    height: 100px;
+    margin-bottom: 4rem;
+    h3 {
+      font-size: x-large;
+    }
   }
 `

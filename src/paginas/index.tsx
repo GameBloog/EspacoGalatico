@@ -49,7 +49,6 @@ import { ImageWithTextSlide } from "../components/ImageWithTextSlide/index.tsx"
 import { LastPage } from "../components/LastPage/index.tsx"
 import { ImgLogos } from "../components/LogoImgs/index.tsx"
 import { SingleWords } from "../components/SingleWords/index.tsx"
-import { CarouselwithText } from "../components/slideCardapio/index.tsx"
 
 const games = [
   { id: "1", image: mesaDeJogos },
@@ -128,8 +127,6 @@ export function Home() {
 
           <SingleWords text=" Temos opções para diferentes tamanhos de festas e orçamentos." />
 
-          <CarouselwithText />
-
           <ImageWithTextSlide
             description=" Espaço totalmente temático, ótimo para tirar aquelas fotos
                   incríveis para as redes socias, comporta até 70 pessoas.
@@ -168,7 +165,6 @@ export function Home() {
           <ImgEspacofestas>
             <img src={espacoFestas} alt="" />
           </ImgEspacofestas>
-
         </MidleDiv>
         <ClientsOpnion images={clientOpnion} />
 

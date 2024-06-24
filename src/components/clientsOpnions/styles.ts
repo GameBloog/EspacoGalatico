@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Reserve = styled.div`
   gap: 1rem;
@@ -19,9 +19,16 @@ export const Reserve = styled.div`
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   }
 
+  div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-  @media (min-width: 1360px) {
+  @media (min-width: 768px) {
     flex-direction: column;
+
     gap: 2rem;
 
     h3 {

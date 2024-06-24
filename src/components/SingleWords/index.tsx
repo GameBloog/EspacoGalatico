@@ -6,8 +6,10 @@ interface Props {
 
 export function SingleWords({ text }: Props) {
   return (
-    <SingleWord>
-      <h3>{text}</h3>
-    </SingleWord>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <SingleWord>
+        <h3>{text}</h3>
+      </SingleWord>
+    </div>
   )
 }
