@@ -169,8 +169,8 @@ export function Home() {
             <img src={espacoFestas} alt="" />
           </ImgEspacofestas>
 
-          <ClientsOpnion images={clientOpnion} />
         </MidleDiv>
+        <ClientsOpnion images={clientOpnion} />
 
         <Section>
           <LastPage />

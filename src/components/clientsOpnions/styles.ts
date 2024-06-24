@@ -7,6 +7,8 @@ export const Reserve = styled.div`
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 
+  /* max-width: 20vw; */
+
   h3 {
     font-size: 1.8rem;
     font-family: "Galada", cursive;

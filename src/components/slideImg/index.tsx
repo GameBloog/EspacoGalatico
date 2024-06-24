@@ -44,7 +44,7 @@ export function Carousel({ images }: CarouselProps) {
   return (
     <div>
       <Swiper
-        centeredSlides
+        // centeredSlides
         onSwiper={(swiper) => {
           swiperRef.current = swiper
         }}
@@ -60,12 +60,12 @@ export function Carousel({ images }: CarouselProps) {
         }}
       >
         {images.map((item: ImageData) => (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={item.id} style={{ display: "flex", alignItems: 'center', justifyContent: 'center' }}>
             <Images onClick={() => openModal(item.image)}>
               <img
                 src={item.image}
                 alt="slider"
-                style={{ cursor: "pointer", objectFit:'contain'}}
+                style={{ cursor: "pointer", objectFit: 'contain' }}
               />
             </Images>
           </SwiperSlide>
