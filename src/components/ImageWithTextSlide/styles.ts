@@ -5,7 +5,7 @@ export const ImageWithTextContainerSlide = styled.div``
 export const ImageWithTextSlides = styled.div`
   background-color: ${(props) => props.theme["orange-500"]};
   max-width: 250px;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto  auto;
   padding: 2rem;
   border-radius: 2rem;
 

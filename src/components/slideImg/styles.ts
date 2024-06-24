@@ -1,15 +1,12 @@
 import styled from "styled-components"
 
 export const Images = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   img {
-    width: 90vw;
+    width: 100%;
+    aspect-ratio: 1/1;
     height: auto;
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
       max-width: 30rem;
     }
   }

@@ -33,7 +33,6 @@ export const DesktopHomePage = styled.div`
 
 export const DesktopImageText = styled.div`
   @media (min-width: 1360px) {
-    display: flex;
     justify-content: space-between;
     margin-left: 2.5rem;
     margin-top: 0rem;

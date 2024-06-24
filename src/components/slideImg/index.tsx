@@ -45,6 +45,7 @@ export function Carousel({ images }: CarouselProps) {
   return (
     <div>
       <Swiper
+        centeredSlides
         onSwiper={(swiper) => {
           swiperRef.current = swiper
         }}
@@ -65,7 +66,7 @@ export function Carousel({ images }: CarouselProps) {
               <img
                 src={item.image}
                 alt="slider"
-                style={{ cursor: "pointer", objectFit: "cover" }}
+                style={{ cursor: "pointer", objectFit:'contain'}}
               />
             </Images>
           </SwiperSlide>

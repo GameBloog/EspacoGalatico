@@ -49,7 +49,7 @@ import { SingleWords } from "../components/SingleWords/index.tsx"
 import { ClientsOpnion } from "../components/clientsOpnions/index.tsx"
 import { LastPage } from "../components/LastPage/index.tsx"
 import { ButtonFixed } from "../components/ButtonFixed/index.tsx"
-import { EndPage } from "../components/Footer/styles.ts"
+import { Footer } from "../components/Footer/index.tsx"
 
 const games = [
   { id: "1", image: mesaDeJogos },
@@ -179,7 +179,7 @@ export function Home() {
         <ButtonFixed />
       </main>
 
-      <EndPage />
+      <Footer />
     </Container>
   )
 }

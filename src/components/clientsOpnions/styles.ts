@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Reserve = styled.div`
-  text-align: center;
   gap: 1rem;
   margin-top: 3.5rem;
   margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 
   h3 {
     font-size: 1.8rem;
@@ -16,13 +17,6 @@ export const Reserve = styled.div`
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
   }
 
-  p {
-    display: flex;
-    justify-content: center;
-    width: 18rem;
-    text-align: center;
-    line-height: 25px;
-  }
 
   @media (min-width: 1360px) {
     flex-direction: column;
