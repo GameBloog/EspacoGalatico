@@ -10,6 +10,13 @@ interface Props {
 }
 
 export function Cardapio({ images }: Props) {
+  const handleClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1enm9ok5ZFiAQSYCG_mFhVuJDMw-JL5lB/view?usp=sharing",
+      "_blank"
+    )
+  }
+
   return (
     <ImageWithTextContainerSlide>
       <ImageWithTextSlides>
@@ -31,19 +38,10 @@ export function Cardapio({ images }: Props) {
             <br />
             <strong>Terra</strong> nosso menu queridinho e especial de{" "}
             <strong>Feijoada</strong>.
-            <br />
-            <br />
-            Acompanhados das entradinhas, salgados fritos na hora, saladinha e é
-            claro nossa grande variedade de bolos deliciosos e docinhos. As
-            bebidas não alcoólicas também ficam por nossa conta, refrigerantes
-            1ª linha, sucos e água.
-            <br />
-            Tudo isso incluso e a vontade na sua festa, para deixar todos os
-            seus convidados felizes.
           </p>
         </TextStyle>
         <div>
-          <button>
+          <button onClick={handleClick}>
             <strong>Acesse nosso cardápio</strong>
           </button>
         </div>
