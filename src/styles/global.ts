@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background: linear-gradient(180deg, #92d050 0%, #004d36 100%);
+    background: linear-gradient(180deg, #92d050 0%, #009073 100%);
     -webkit-font-smoothing: antialiased;
     max-width: 100vw;
   }
